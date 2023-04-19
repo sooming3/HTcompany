@@ -42,6 +42,42 @@ public class HomeController {
 	return "index";
 	}
 	
+	// 회원가입으로 이동하기
+	@RequestMapping(value="/join", method = RequestMethod.GET)
+	public String join() {
+	return "member_joinpage";
+	}
+	
+	// 로그인으로 이동하기
+	@RequestMapping(value="/login", method = RequestMethod.GET)
+	public String login() {
+	return "member_loginpage";
+	}
+	
+	// 리스트로 이동하기
+	@RequestMapping(value="/list", method = RequestMethod.GET)
+	public String list() {
+	return "Board_list";
+	}
+	
+	// 리스트로 이동하기
+	@RequestMapping(value="/answer", method = RequestMethod.GET)
+	public String answer() {
+	return "Board_answer";
+	}
+	
+	// 리스트로 이동하기
+	@RequestMapping(value="/view", method = RequestMethod.GET)
+	public String view() {
+	return "Board_list_view";
+	}
+	
+	// 리스트로 이동하기
+	@RequestMapping(value="/question", method = RequestMethod.GET)
+	public String question() {
+	return "Board_question";
+	}
+	
 	// 카트로 이동하기
 	@RequestMapping(value="/cartPage", method = RequestMethod.GET)
 	public String cart() {
