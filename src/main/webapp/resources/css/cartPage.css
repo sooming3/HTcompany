@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+body{
+	background-color: #FAF7F2;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+#allall{
+	overflow-x: hidden;
+}
+
+#icon{
+	width: 20px;
+	height: 20px;
+}
+
+#icondiv{
+	text-align: top;
+}
+
+#gift{
+	position: relative;
+}
+
+#gift>img{
+	width: 100%;
+	height: auto;
+}
+
+h1{
+	color: white;
+	position: absolute;
+	top: 43%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	font-family: 'Great Vibes', cursive;
+	font-size: 35px;
+	font-weight: 1;
+}
+
+#cartPage{
+	position: relative;
+	left: 20%;
+}
+
+#all>button{
+	display: inline-block;
+	color: gray;
+	background-color: transparent;
+	font-weight: 600;
+	line-height: 30px;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 0px 0px 0px 0px;
+}
+
+#all>button:hover{
+	color: black;
+}
+
+.goods{
+	margin-bottom: 20px;
+	margin-top: 5px;
+	background-color: #f0ede8;
+	padding: 30px;
+}
+
+/* #all .goods:first-child{
+	margin-top: 5px;	
+} */
+
+.goods .icon_remove{
+	width: 30px; 
+	height: 30px;
+	float: right;
+}
+
+.product_img_div{
+	margin-right: 30px;
+	display: inline-block;
+}
+
+.product_img_div>img{
+	width: 140px;
+	height: 140px;
+	padding-bottom: 25px; 	
+}
+
+.goods_option{
+	
+	display: inline-block;
+}
+
+.goods_option h3{
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.goods_option ul{
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+.shipping-info{
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.quantity{
+	display: inline-block;
+	float: right;
+	margin: 0 25px;
+}
+
+.price-label{
+	display: inline-block;
+	float: right;
+	margin: 0 20px;
+}
+
+.goods_option button{
+	border: none;
+	border-left: 1px solid black;
+	padding-left: 20px;
+	padding-right: 15px;
+	background-color: transparent;	
+}
+
+.goods_option button:first-child {
+	border-left: none;
+	padding-left: 0px;
+}
+
+.goods_option button:hover{
+	color: gray;
+}
+
+#order{
+	display: inline-block;
+	margin-left: 40px;
+	top: 475px;
+	position: fixed;
+	padding: 25px;
+	width: 250px;
+	background-color: white;
+}
+
+#order ul li:last-child span:last-child{
+	font-size: 15px;
+}
+
+#order ul{
+	text-align: left;
+	margin: 20px 0;
+}
+
+.order_left{
+	font-size: 12px;
+}
+
+.order_right{
+	font-size: 13px;
+	float: right;
+}
+
+#order p{
+	font-size: 13px;
+	padding: 10px 0;
+}
+
+.button {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	background-color: black;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 2px;
+	border: 1px solid;
+	box-shadow: 0px 0px 0px 0px;
+	margin-top: 10px;
+	padding: 1px 0;
+}
+
+.button:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid;
+}
+ 
+#all{
+	display: inline-block;
+	width: 800px;
+	margin-top: 20px;
+}
+
+/* 선택 삭제 팝업 */
+#choicePopup{
+	z-index: 5;
+	position: absolute;
+	top: 8%;
+	left: 31%;
+	transform: translate( -50%, -50% );
+	display: none;
+	background-color: white;
+	padding: 20px 40px 40px 40px;
+	box-shadow: 0 8px 32px gray;
+}
+
+#choicePopup p{
+	margin-bottom: 40px;
+}
+
+#choicePopup div button:first-child {
+	background-color: white;
+	color: black;
+	border: 1px solid;
+}
+
+#choicePopup button:first-child:hover {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	background-color: black;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 2px;
+	border: 1px solid;
+	box-shadow: 0px 0px 0px 0px;
+	margin-top: 10px;
+	padding: 1px 0;
+}
+
+/* 옵션 수정 팝업 */
+#updatePopup{
+	z-index: 5;
+	position: absolute;
+	top: 8%;
+	left: 31%;
+	transform: translate( -50%, -50% );
+	display: none;
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0 8px 32px gray;
+}
+
+#updatePopup-left{
+	display: inline-block;
+	border-right: solid 1px #E6E3DF;
+}
+#updatePopup-right{
+	display: inline-block;
+	margin: 40px 60px 40px 30px;
+	vertical-align: top;
+}
+
+#updatePopup fieldset{
+	border: none;
+	margin-bottom: 30px;
+}
+
+.selectStyle{
+	width: 150px;
+	height: 35px;
+	size: 15;
+	margin-top: 10px;
+}
+
+.iconX{
+	width: 30px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+/* 전체 삭제 팝업 */
+#removePopup{
+	z-index: 5;
+	position: absolute;
+	top: 8%;
+	left: 31%;
+	transform: translate( -50%, -50% );
+	display: none;
+	background-color: white;
+	padding: 20px 40px 40px 40px;
+	box-shadow: 0 8px 32px gray;
+}
+
+#removePopup p{
+	margin-bottom: 40px;
+}
+
+#removePopup div button:first-child {
+	background-color: white;
+	color: black;
+	border: 1px solid;
+}
+
+#removePopup button:first-child:hover {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	background-color: black;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 2px;
+	border: 1px solid;
+	box-shadow: 0px 0px 0px 0px;
+	margin-top: 10px;
+	padding: 1px 0;
+}
+
+/* 장바구니가 비었을 때 페이지 */
+#emptyPage{
+	display: none;
+}
+
+#emptyPage img{
+	width: 340px;
+	height: 340px;
+	margin: 20px 25px;
+}
+
+:is(#img1, #img2, #img3) {
+  font-size: 2rem;
+  margin: 1rem;
+  animation: bubble 2s ease;
+  animation-fill-mode: forwards;
+}
+
+#img1 {
+  animation: fadein 1s;
+}
+
+#img2 {
+  animation: fadein 2s;
+}
+
+#img3 {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* #img1{
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; Firefox
+  -webkit-animation: fadein 2s; Safari and Chrome
+  -o-animation: fadein 2s; Opera
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+/* 사이드 메뉴 */
+#sideMenu{
+	padding: 30px;
+	height: 908px;
+	background-color: white;
+	z-index: 100;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	box-shadow: 0 8px 32px gray;
+/*	opacity:0.2; */
+	overflow-y: scroll;
+ 	display: none;
+}
+
+#sideMenu h2{
+	margin: 10px;
+	text-align: center;
+}
+
+#sideMenu h4{
+	margin-bottom: 10px;
+}
+
+.sideMenuGoods{
+	display: inline-block;
+	background-color: #f0ede8;
+	margin-top: 10px;
+}
+
+#sideMenu .icon_remove{
+	width: 20px; 
+	height: 20px;
+	float: right;
+	margin: 5px 5px 5px 15px;
+}
+
+#sideMenu .product_img{
+	width: 70px;
+	height: 70px;
+	margin-top: 30px;
+}
+#sideMenu .product_img_div{
+	float: left;
+	margin: 5px 25px 10px 10px;
+}
+
+#sideMenu .product_div{
+	float: left;
+	margin: 15px 0;
+}
+
+#sideMenu span{
+	font-size: 11px;
+}
+
+#sideMenu p, .sideMenu-subtitle{
+	font-size: 12px;
+}
+
+#sideMenu #order-sum{
+	clear: both; 
+	position: absolute; 
+	bottom: 30px;
+	width: 293px;
+}
+
+#order-sum div span:first-child{
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+#order-sum div span:last-child{
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	float: right;
+}
