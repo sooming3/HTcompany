@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+ main{
+ width:100%;
+  margin : 0 auto;
+   background-image: url("../images/ff.jpg");
+   background-position:center center;
+	   background-repeat:no-repeat;   
+	background-size: cover;
+	/* background-attachment: fixed; */
+	 height: 260vh; 
+	/* height: 100%; 적용불가...*/
+	
+ }
+ main .join_wrap{
+ width: 100%;
+margin: 0 auto;
+ }
+main .join_form {
+	padding: 40px 0;
+	position: absolute;
+top:200px;	/* position: absolute;일때 top, left  필수 */
+left: 50%;
+transform: translateX(-50%);
+	background-color: #F5F5F5; 
+ 	width: 560px;
+ 	opacity: 0.9;
+ 	align: center;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 19px;
+
+}
+.t1 {
+  font-size: 13px; 
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.login_info_inner_size{
+  padding:0 0 50px 60px;
+  /* padding:0 0 50px 60px; 정중앙 */
+  width: 360px;
+  
+}
+.check {
+  padding: 30px 50px;
+  width: 370px;
+  margin: 10px auto;
+ 
+}
+
+.login_info {
+}
+
+
+.personal_info_inner_size{
+  padding: 20px 50px;
+   padding:0 0 50px 60px;
+   width: 360px;
+  margin: 0 auto;
+}
+
+.requirement_info_inner_size{
+  padding: 20px 50px;
+   padding:0 0 50px 60px;
+   width: 360px;
+  margin: 0 auto;
+}
+
+
+.form-control {
+  margin-bottom: 2px;
+  margin-top: 5px;
+  width: 280px;
+  height: 26px;
+}
+
+h3 {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  font-size: 14px;
+  margin: 5px 3px;
+}
+.hiddenText{
+	width:300px;
+	display:inline-block;
+	padding-bottom:5px; /* 10px */
+  	font-size: 12px;
+  	line-height: 1.1em;
+}
+#passspan{
+	padding-left:0;
+	font-size:12px;
+	line-height: 1.1em;
+}
+
+.gender{
+	margin-right: 5px;
+}
+
+.btnWrap {
+	width: 470px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.btn {
+	background-color: lavender;
+  cursor: pointer;
+  border: none;
+  width: 210px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-left: 22px;
+}
+
+.btn:hover{
+	background-color: #E3C4ff;
+}
+
+
+.join_checkbtn {
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.join_checkbtn:hover{
+	background-color: #E3C4ff;
+}
+
+.check{
+	background-color:#fff;
+}
+
+.cell{
+}
+
+.cell p {
+	font-size: 13px;
+}
+
+.t3 {
+  color: #777;
+  font-size: 14px;
+  margin: 10px;
+}
+.category {
+  margin-top: 25px;
+}
+.category p {
+	font-size: 12px;
+	color: #777;
+}
+.detail{
+	margin: 5px 0;
+	display: inline-block;
+}
+#form-group{
+	display:flex;
+}
+#dchk{
+magin-left:0;
+}
+
+.checkment{
+	font-size: 12px;
+	vertical-align:text-top; /* input체크박스랑 span글씨 높이 맞추기 */
+	width: 343px;
+	display: inline-block;
+	line-height: 1.6em;
+}

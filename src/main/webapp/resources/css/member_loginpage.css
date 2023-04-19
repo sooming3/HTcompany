@@ -1,0 +1,140 @@
+@charset "UTF-8";
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Gowun+Batang&family=Nanum+Myeongjo&family=Prosto+One&display=swap');
+
+ 
+ul {
+  list-style: none;
+}
+
+/* a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+#wrap {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+input::placeholder{ color: light-gray; }
+	/* input:hover { opacity: 0.5; } */
+
+#email {
+	width: 430px;
+	height: 50px;
+	/* border: none; */
+	border : 0.2px solid #DCDCDC; 	/* input태그는 호버 전이랑 호버 후의 border 똑같이 지정해야 안 밀림 */
+	padding: 0 8px;
+	margin-bottom: 2px;
+	font-size: 18px;
+}
+
+#email:hover{
+	border : 0.2px solid #DCDCDC;  /* input태그는 호버 전이랑 호버 후의 border 똑같이 지정해야 안 밀림 */
+}
+
+#pw {
+	width: 430px;
+	height: 50px;
+	border : 0.2px solid #DCDCDC; 	
+	padding: 0 8px;
+	margin-bottom: 2px;
+	font-size: 18px;
+}
+
+#pw:hover {
+	border : 0.2px solid #DCDCDC;
+	width: 430px;
+	height: 50px;
+}
+
+.form .btn  {
+	background-color: #E3C4ff;
+	color: #fff;
+	font-size: 20px;
+	width: 450px;
+	height: 51px;
+	text-align: center;
+	padding: 0 8px;
+	border: none;
+	margin: 6px 0;
+	border-radius: 5px;
+}
+
+.form .btn:hover{
+	background-color: #fff;
+	color:#E3C4ff;
+	border: 1px solid #E3C4ff;
+	font-weight: bold;
+}
+
+section {
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	margin: 0 auto;
+}
+section .inner_size {
+	position: relative; /* 기준은 무조건 하나 */
+	margin: 0 auto;
+	width: 1100px; /* 이미지랑 폼 가로너비 조절시  */
+	height: 900px;
+}
+section .inner_size #login_image {
+	width: 50%;
+	object-fit: fill;
+	position: absolute; /* 기준을 대상으로 재배치 */
+	top: 118px;
+	left: -70px;  /* 이미지 가로 위치조정 */
+
+}
+section .inner_size .form {
+	position: absolute;/* 기준을 대상으로 재배치 */
+	width:30%;
+	text-align: center;
+	top: 48%;
+	right: 150px; /* 로그인 폼 가로 위치조정 */
+	transform:translateY(-50%);
+}
+section .inner_size .form h2 {
+	margin-bottom: 20px;
+}
+section .inner_size .form form {
+}
+
+section .inner_size .form .text {
+	margin-top: 55px;
+	/* width: 464px; */
+	width: 500px;
+}
+
+section .inner_size .form form p {
+	text-align: center;
+	color: #777;
+	font-size: 18px;
+	margin-bottom : 40px;
+}
+section .inner_size .form #eng{
+	font-size: 24px;
+	margin-bottom: 5px;
+	margin-right: 30px; 
+	font-family: 'Fira Sans', sans-serif;
+}
+
+#emailspan {
+	position: relative; 
+	margin-right:195px;
+	margin-left: 0;
+	font-size: 12px;
+}
+#passwordspan{
+	position: relative; 
+	margin-right:181px;
+	margin-left: 0;
+	font-size: 12px;
+}
