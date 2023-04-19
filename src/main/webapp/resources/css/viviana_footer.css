@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+hr{
+	border-width:1px 0 0 0;
+	border-style:solid;
+	border-color:rgba( 213, 213, 213, 1 );
+	width:1200px;
+}
+
+/* 뉴스레터 구독 자리 */
+.footer_news{
+	padding-top: 330px;
+	padding-bottom: 120px;		
+	font-size : 25px;
+}
+
+.frame {
+  width: 90%;
+  text-align: center;
+}
+.custom-btn {
+  width: 200px;
+  height: 40px;
+  padding: 8px 25px;
+  border: 1px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  outline: none;
+}
+
+.btn-16 {
+  background: #000;
+  color: #fff;
+  z-index: 1;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #e0e5ec;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+/* 푸터 컨테이너 자리 */
+
+.footer_container{
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width:1200px;
+}
+
+#footer_group{
+	margin: 10px;
+	width: calc(25% - 1.25rem);
+	line-height:35px;
+}
+
+.footer_title{
+	font-weight:700;
+}
+
+.footer_sns_icon{
+	width:24px;
+	height:24px;
+	padding:5px;
+
+}
+
+/* 판매자 정보 */
+.footer_businessdetails{
+	font-size : 10px;
+	padding-top : 50px;
+}
+
+

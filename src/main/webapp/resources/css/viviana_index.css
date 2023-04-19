@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* main section css */
+.section {
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#section1 {
+    /*background-color: #FFD8D8;*/
+}
+
+#section2 {
+    /*background-color: #FAECC5;*/
+}
+
+#section3 {
+    /*background-color: #E4F7BA;*/
+}
+
+#section4 {
+    /*background-color: #D4F4FA;*/
+}
+
+#section5 {
+    /*background-color: #DAD9FF;*/
+}
+
+#footer {
+    /*background-color: #F6F6F6;*/
+}
+
+/* main section css끝 */
+
+
+/* main section1 css */
+/* 영상자리 */
+/* main section1 css끝 */
+
+
+/* main section2 css */
+/* 모델자리 */
+.main_model1{
+	float:left;
+}
+
+.main_model2{
+	float:right;
+}
+/* main section2 css끝 */
+
+/* main section3 css */
+/* 슬라이드자리 */
+.main_slide{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* translate(x축,y축) */
+}
+
+.main_slide_title{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.main_slide_title p{
+	font-size: 16px;
+}
+
+.main_slide_box{
+	margin-top: 20px;
+	width: 300px;
+    height: 400px;
+}
+
+.main_slide_imgbox{
+
+}
+
+.main_slide_userbutton{
+	margin-top: 10px;
+}
+
+.main_slide_boxbutton{
+	float: left;
+	margin-left: 50px;
+}
+
+.main_slide_boxname{
+	clear: both;
+	float: left;
+	font-size:16px;
+	margin-left: 50px;
+}
+
+.main_slide_boxbutton_gold{
+	width: 15px;
+    height: 15px;
+	background-color: #c6ab5e;
+	border-radius:10px;
+	border:none;
+}
+
+.main_slide_boxbutton_silver{
+	width: 15px;
+    height: 15px;
+	background-color: #bcbcbc;
+	border-radius:10px;
+	border:none;
+}
+
+.main_slide_boxbutton_rosegold{
+	width: 15px;
+    height: 15px;
+	background-color: #f3d3be;
+	border-radius:10px;
+	border:none;
+}
+
+/*없애면 비율 이상해짐*/
+    html{
+      height: 100%;
+    }
+
+/*칸 크기*/    
+    .swiper {
+      width: 1600px;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 760px) {
+      .swiper-button-next {
+        right: 20px;
+        transform: rotate(deg);
+        color:#000;
+      }
+
+      .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+        color:#000;
+      }
+    }
+/* main section3 css끝 */
+
+/* main section4 css */
+/* 기프트자리 */
+.main_section4_gift{
+	position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* translate(x축,y축) */
+    width: 1300px;
+    margin-top:50px;
+}
+
+.main_section4_left{
+	float: left;
+	margin: 50px;
+}
+
+.main_section4_right{
+	float: right;
+	margin: 50px;
+}
+
+.main_section4_img{
+	width: 530px;
+	height: 600px;
+}
+
+.main_section4_link{
+	margin-top:10px;
+	text-align: center;
+}
+
+/* main section4 css끝 */
+
+/* main section5 css */
+/* 웨딩자리 */
+.main_section5_wedding{
+	position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* translate(x축,y축) */
+    width: 1300px;
+    margin-top:50px;
+}
+
+.main_section5_left{
+	float: left;
+	margin: 50px;
+}
+
+.main_section5_right{
+	float: right;
+	margin: 50px;
+}
+
+.main_section5_img{
+	width: 530px;
+	height: 600px;
+}
+
+.main_section5_w{
+	position:relative;
+	width: 530px;
+	height: 600px;
+}
+
+.main_section5_link{
+	position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+	text-align: center;
+}
+/* main section5 css끝 */
+
+

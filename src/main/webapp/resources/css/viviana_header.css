@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	font-family: "맑은 고딕";
+	list-style: none;
+	color: #000000;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+#header{
+	width: 100%;
+	background-color: rgba( 255, 255, 255, 0.5 );
+	height:127px;
+	position: fixed;
+	z-index:20;
+}
+
+#header:hover{
+	background-color: rgba( 255, 255, 255, 1 );
+}
+
+.header_icon_left{
+	width:200px;
+	padding:10px;
+	float: left;
+}
+
+.header_icon_right{
+	width:200px;
+	padding:10px;
+	float: right;
+}
+
+.header_iconimg_left{
+	width:24px;
+	height:24px;
+	
+}
+
+.header_iconimg_right{
+	width:24px;
+	height:24px;
+	padding-left:7px;
+	float: right;
+}
+
+.header_logo_center{
+	display: flex;
+    justify-content: center;
+}
+
+.header_logoimg{
+	width:auto;
+	height:40px;
+	margin-top: 28px;
+}
+
+.header_nav{
+	width: 100%;
+	margin-top:17px;
+	z-index: 5;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.header_menu>li{
+	float: left;
+	width: 150px;
+}
+
+.header_menu>li>a{
+	line-height: 40px;
+	font-size: 12px;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	display: block;
+}
+
+.header_menu>li>a:hover{
+	width: 100px;
+	font-weight: bold;
+	border-bottom: solid 2px #E3C4FF;
+}
+
+.header_submenu{
+	display: none;
+	position: absolute;
+	z-index: 3;
+	top: 100%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height:550px;
+	background-color: rgba( 255, 255, 255, 1 );
+}
+
+.header_submenu>li{
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.header_submenu_hi{
+	
+}
+
+.header_submenu_hi_sub{
+	float: left;/* inline요소로 되게 한다. */
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.header_submenu_j{
+	
+}
+
+.header_submenu_j_sub{
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 10px;
+}
+
+.header_menu_a{
+	margin-top:5px;
+	display: block;
+}
+
+.header_submenu_w{
+	
+}
+
+.header_submenu_w_sub{
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 10px;
+}
+
+.header_scrollbutton_all{
+	float: right;
+	margin-right: 50px;
+}
+
+.header_scrollbutton{
+	width: 15px;
+    height: 15px;
+	background-color: #fff;
+	border-radius:10px;
+	border:none;
+	margin-top: 5px;
+	display:block;
+}
+
+.header_scrollbutton:hover{
+	background-color: #E3C4FF;
+}
+
+
+
+
