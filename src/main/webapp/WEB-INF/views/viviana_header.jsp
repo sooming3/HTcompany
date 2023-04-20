@@ -33,25 +33,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="resources/js/cartPage.js"></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
-	<!-- 성언 -->
-	<link rel="stylesheet" href="resources/css/member_loginpage.css">
-	<link rel="stylesheet" href="resources/css/member_joinpage.css">
-	<!-- 회원가입페이지 -비밀번호 눈 모양 아이콘 -->	
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<script src="resources/js/member_joinpage.js" type="text/javascript"></script>
-	<script src="resources/js/member_loginpage.js" type="text/javascript"></script>
-	<!--Font-aweome-->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	
-	<!-- 선영 -->
-    
-  <!-- 수미 -->
-  <link rel="stylesheet" href="resources/css/product.css">
-  <link rel="stylesheet" href="resources/css/product_detail.css"> 
-    
 
 </head>
 <body>
@@ -66,6 +47,7 @@
 		
 		<div class="header_icon_right">
 			<a href="#"><img onmouseover="view(true)" class="header_iconimg_right" src="resources/icon/shopping_icon.png" alt="쇼핑"></a>
+				<%@ include file="cartPage_sideMenu.jsp"%>
 			<a href="#"><img class="header_iconimg_right" src="resources/icon/like_icon.png" alt="좋아요"></a>
 			<a href="#"><img class="header_iconimg_right" src="resources/icon/login2_icon.png" alt="사용자"></a>
 			<a href="#"><img class="header_iconimg_right" src="resources/icon/notification_icon.png" alt="알림"></a>

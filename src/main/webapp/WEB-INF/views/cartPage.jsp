@@ -27,7 +27,7 @@
 					</li>
 				</ul>
 			<div class="sideMenu-shipping-info">
-				<p class="sideMenu-title"><b>재고 보유</b></p>
+				<p class="sideMenu-stock"><b>재고 보유</b></p>
 			</div>
 			<div>
 				<span class="baglist-item-price THREE">
@@ -92,7 +92,7 @@
 			
 				
 					<div class="shipping-info">
-						<p class="title">재고 보유</p>
+						<p class="stock_status"><b>재고 보유</b></p>
 						<div class="subtitle">1~3일 이내 발송 가능한 상품입니다.</div>
 					</div>
 				
