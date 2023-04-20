@@ -47,6 +47,11 @@
  	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	
 	<!-- 선영 -->
+    
+  <!-- 수미 -->
+  <link rel="stylesheet" href="resources/css/product.css">
+  <link rel="stylesheet" href="resources/css/product_detail.css"> 
+    
 
 </head>
 <body>

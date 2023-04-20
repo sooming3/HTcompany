@@ -3,12 +3,12 @@
 <div id="page">
     <div class="container">
         <div class="ring-img">
-            <img class="con" src="img/ring01.png" alt="반지사진1" width="500" height="500"> 
-            <img class="con" src="img/ring02.png" alt="반지사진2" width="500" height="500"> 
-            <img class="con" src="img/ring03.png" alt="반지사진3" width="500" height="500"> 
-            <img class="con" src="img/ring04.png" alt="반지사진4" width="500" height="500">
-            <img class="con" src="img/ring05.png" alt="반지사진5" width="500" height="500"> 
-            <img class="con" src="img/ring06.png" alt="반지사진6" width="500" height="500">
+            <img class="con" src="/resources/img/ring01.png" alt="반지사진1" width="500" height="500"> 
+            <img class="con" src="/resources/img/ring02.png" alt="반지사진2" width="500" height="500"> 
+            <img class="con" src="/resources/img/ring03.png" alt="반지사진3" width="500" height="500"> 
+            <img class="con" src="/resources/img/ring04.png" alt="반지사진4" width="500" height="500">
+            <img class="con" src="/resources/img/ring05.png" alt="반지사진5" width="500" height="500"> 
+            <img class="con" src="/resources/img/ring06.png" alt="반지사진6" width="500" height="500">
         </div>
     </div>
     <div id="product-container">
