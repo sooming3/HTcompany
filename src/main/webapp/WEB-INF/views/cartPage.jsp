@@ -48,7 +48,7 @@
 	
 	<!-- 메인 이미지  -->
 	<div id="gift"><img src="resources/img/main.jpg"></div>
-	<h1 align="center">Shopping Bag (3)</h1>
+	<h1 id="shoppingBag" align="center">Shopping Bag (3)</h1>
 		
 	
 <div id="cartPage">
