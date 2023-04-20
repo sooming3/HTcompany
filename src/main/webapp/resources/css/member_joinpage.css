@@ -3,7 +3,7 @@
  main{
  width:100%;
   margin : 0 auto;
-   background-image: url("../images/ff.jpg");
+   background-image: url("resources/img/ff.jpg");
    background-position:center center;
 	   background-repeat:no-repeat;   
 	background-size: cover;

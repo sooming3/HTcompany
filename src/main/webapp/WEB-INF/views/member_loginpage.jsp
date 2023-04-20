@@ -6,7 +6,7 @@
 
   	<section>
         <div class="inner_size">
-          	<img src="images/ring_3.jpg" id="login_image">
+          	<img src="resources/img/ring_3.jpg" id="login_image">
           <div class="form">
            		<!--  <h2>로그인</h2> -->
 		          <form name="loginForm">
