@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
-
-hr{
+.footer_hr{
 	border-width:1px 0 0 0;
 	border-style:solid;
 	border-color:rgba( 213, 213, 213, 1 );

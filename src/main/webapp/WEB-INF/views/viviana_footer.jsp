@@ -14,7 +14,7 @@
     	</div>
     	<!-- footer_news끝 -->
     	
-    	<hr>
+    	<hr class="footer_hr">
     	
     	<!-- footer_container -->
     	<div class="footer_container">
@@ -73,7 +73,7 @@
 		</div>
 		<!-- footer_container끝 -->
 		
-		<hr>
+		<hr class="footer_hr">
 		
 		<!-- footer_businessdetails -->
 		<div class="footer_businessdetails">
