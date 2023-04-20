@@ -6,7 +6,7 @@
 <body>
 
 <div id="wrap1">
-<main id="join_main">
+<div id="join_main">
 <div class="join_wrap">
 <div class="join_form">
           <h2 id="join_h2">회원 가입해주시기 바랍니다.</h2>
@@ -165,7 +165,7 @@
          		 
 </div><!-- join_form -->
 </div>
-</main>
+</div>
 </div><!-- wrap1 -->
     <!-- main -->
 

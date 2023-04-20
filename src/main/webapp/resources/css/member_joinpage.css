@@ -3,7 +3,8 @@
  #wrap1 #join_main{
  width:100%;
   margin : 0 auto;
-   background-image: url("resources/img/ff.jpg");
+    background-image: url("../img/ff.jpg"); 
+ /*   background-color: yellow; */
    background-position:center center;
 	   background-repeat:no-repeat;   
 	background-size: cover;
