@@ -3,8 +3,8 @@
 <%@ include file ="viviana_header.jsp" %>
 
 <title>QUESTION</title>
-<script src="js/Board_question.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/Board_question.css">
+<script src="resources/js/Board_question.js" type="text/javascript"></script>
+<link rel="stylesheet" href="resources/css/Board_question.css">
 
 <body style="overflow-x: hidden">
 

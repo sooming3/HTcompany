@@ -9,7 +9,7 @@
 
 <title>LIST</title>
 
-<link rel="stylesheet" href="css/Board_list.css">
+<link rel="stylesheet" href="resources/css/Board_list.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 

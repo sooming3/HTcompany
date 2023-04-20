@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>ANSWER</title>
-<link rel="stylesheet" href="css/Board_answer.css">
+<link rel="stylesheet" href="resources/css/Board_answer.css">
 
 </head>
 <body>
