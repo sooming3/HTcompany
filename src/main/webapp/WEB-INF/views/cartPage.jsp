@@ -9,9 +9,9 @@
 		<h2>쇼핑백 (3)</h2>
 		<hr>
 	<div class="sideMenuGoods">
- 		<img class="icon_remove" src="image/icon_remove.png" onclick="choicePopup()">
+ 		<img class="icon_remove" src="resources/img/icon_remove.png" onclick="choicePopup()">
 		<div class="product_img_div">
-			<img class="product_img" src="image/neck1.jpg">
+			<img class="product_img" src="resources/img/neck1.jpg">
 		</div>
 		<div class="product_div">
 			<h4 class="sideMenu-item-title"><a href="#">수민 찰떡 네크리스</a></h4>
@@ -47,7 +47,7 @@
 	</div>
 	
 	<!-- 메인 이미지  -->
-	<div id="gift"><img src="image/main.jpg"></div>
+	<div id="gift"><img src="resources/img/main.jpg"></div>
 	<h1 align="center">Shopping Bag (3)</h1>
 		
 	
@@ -59,7 +59,7 @@
 	
 	<!-- 전체삭제 팝업 -->	
 	<div id="removePopup">
-		<div align="right"><img onclick="removePopup()" class="iconX" src="image/icons_x.png"></div>
+		<div align="right"><img onclick="removePopup()" class="iconX" src="resources/img/icons_x.png"></div>
 		<p>쇼핑백에 담긴 상품을 전부 비우시겠습니까?</p>
 		<div>
 		<button onclick="allremove()" class="button">확인</button>
@@ -68,9 +68,9 @@
 	</div>
 		
 		<div class="goods">
-			<img class="icon_remove" onclick="choicePopup()" src="image/icon_remove.png">
+			<img class="icon_remove" onclick="choicePopup()" src="resources/img/icon_remove.png">
 			<div class="product_img_div">
-				<img class="product_img" src="image/neck1.jpg">
+				<img class="product_img" src="resources/img/neck1.jpg">
 			</div>
 
 			<div class="goods_option">
@@ -125,9 +125,9 @@
 			</div>
 		</div>
 		<div class="goods">
-			<img class="icon_remove" src="image/icon_remove.png" onclick="choicePopup()">
+			<img class="icon_remove" src="resources/img/icon_remove.png" onclick="choicePopup()">
 			<div class="product_img_div">
-				<img class="product_img" src="image/neck1.jpg">
+				<img class="product_img" src="resources/img/neck1.jpg">
 			</div>
 
 			<div class="goods_option">
@@ -182,9 +182,9 @@
 			</div>
 		</div>
 		<div class="goods">
-			<img class="icon_remove" src="image/icon_remove.png" onclick="choicePopup()">
+			<img class="icon_remove" src="resources/img/icon_remove.png" onclick="choicePopup()">
 			<div class="product_img_div">
-				<img class="product_img" src="image/neck1.jpg">
+				<img class="product_img" src="resources/img/neck1.jpg">
 			</div>
 
 			<div class="goods_option">
@@ -240,7 +240,7 @@
 		</div>
 <!-- 선택 삭제 팝업 -->	
 	<div id="choicePopup">
-		<div align="right"><img onclick="deletePopup()" class="iconX" src="image/icons_x.png"></div>
+		<div align="right"><img onclick="deletePopup()" class="iconX" src="resources/img/icons_x.png"></div>
 		<p>선택한 상품을 쇼핑백에서 지우시겠습니까?</p>
 		<div>
 		<button class="button">확인</button>
@@ -249,12 +249,12 @@
 	</div>
 <!-- 옵션 수정 팝업창 -->
 	<div id="updatePopup">
-		<div align="right"><img onclick="removePopup2()" class="iconX" src="image/icons_x.png"></div>
+		<div align="right"><img onclick="removePopup2()" class="iconX" src="resources/img/icons_x.png"></div>
 		<div align="center" style="margin-bottom: 30px;">
 			<h2>옵션 수정</h2>
 		</div>
 		<div id="updatePopup-left">
-			<img src="image/neck1.jpg" width="260px" height="260px">
+			<img src="resources/img/neck1.jpg" width="260px" height="260px">
 			<!-- <div>수민 찰떡 네크리스</div> -->
 		</div>
 		<div id="updatePopup-right">
@@ -328,7 +328,7 @@
 	<p>내 계정에 로그인하면 이전에 고객님이 다른 기기에서 추가했던 상품을 볼 수 있습니다.</p>
 	<button class="button" style="width: 200px; margin: 20px 0px 50px 0px;">로그인</button>
 	<p>비비아나의 다채로운 매력에 빠져보세요!</p>
-	<img id="img1" src="image/neck1.jpg"><img id="img2" src="image/ear.jpg"><img id="img3" src="image/ring.jpg">
+	<img id="img1" src="resources/img/neck1.jpg"><img id="img2" src="resources/img/ear.jpg"><img id="img3" src="resources/img/ring.jpg">
 
 </div>
 
