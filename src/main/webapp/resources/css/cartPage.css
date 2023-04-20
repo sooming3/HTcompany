@@ -1,20 +1,17 @@
 @charset "UTF-8";
 
-body{
+#cartPage_all{
 	background-color: #FAF7F2;
+	overflow-x: hidden;
 }
 
-li{
+/* li{
 	list-style: none;
 }
 
 a{
 	text-decoration: none;
-}
-
-#allall{
-	overflow-x: hidden;
-}
+} */
 
 #icon{
 	width: 20px;

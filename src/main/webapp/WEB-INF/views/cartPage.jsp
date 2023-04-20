@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="viviana_header.jsp"%>
 
-<div id="allall">
+<div id="cartPage_all">
 
 	<!-- 사이드 메뉴 -->
 	<div id="sideMenu" onmouseout="view(false)" onmouseover="view(true)">
