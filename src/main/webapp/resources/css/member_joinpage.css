@@ -85,7 +85,7 @@ transform: translateX(-50%);
   margin-bottom: 20px;
 }
 
-select {
+#join_select{
   width: 100px;
   height: 30px;
   margin-bottom: 20px;
