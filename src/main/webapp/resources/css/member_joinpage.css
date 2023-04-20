@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
- #join_main{
+ #wrap1 #join_main{
  width:100%;
   margin : 0 auto;
    background-image: url("resources/img/ff.jpg");
