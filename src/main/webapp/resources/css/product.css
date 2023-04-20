@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body {
+		background-image: url("../img/배경3.avif");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+}
+
+.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		padding-top: 10px;
+}
+
+#main {
+		max-width: 600px;
+		padding: 30px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: white;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-top: 10px;
+}
+
+.title {
+		margin-top: 10;
+		margin-bottom: 50;
+		margin-left: 200px;
+		align-items: center;
+		justify-content: center;
+}
+
+.bold {
+		font-weight: bold;
+}
+
+.field {
+		display: flex;
+		flex-direction: row;
+		align-items: left;
+		padding-bottom: 10px;
+		padding-top: 10px;
+}
+
+.field span.bold {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 90px;
+		align-items: left;
+}
+
+.field input[type=text], .field input[type=number], .field textarea {
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		width: 100%;
+		box-sizing: border-box;
+		font-size: 16px;
+}
+
+.field.textarea {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+}
+
+.field.textarea span.bold {
+		margin-bottom: 5px;
+		margin-left: 0px;
+		margin-right: 0px;
+}
+
+.field.textarea textarea {
+		width: 100%;
+		min-height: 200px;
+}
+/*
+.field.category {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+   
+}*/
+.field.category {
+		flex-direction: row;
+		margin-top: 10px;
+		padding: 88;
+		padding-top: 10px;
+}
+
+.category select {
+		margin-top: 5px;
+		margin-left: 10;
+		margin-right: 0;
+		padding-top: 0px;
+}
+
+select {
+		margin-left: 0;
+		width: 100px;
+}
+
+.image input[type=file] {
+		margin-top: 5px;
+		margin-top: 5px;
+		margin-left: 0;
+}
+
+.image input[type=file][multiple] {
+		margin-top: 10px;
+}
+
+input[type=submit] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+}
+
+input[type=submit]:hover {
+		background-color: #45a049;
+}
+}
