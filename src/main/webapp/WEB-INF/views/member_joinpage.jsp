@@ -6,10 +6,10 @@
 <body>
 
 <div id="wrap1">
-<main>
+<main id="join_main">
 <div class="join_wrap">
 <div class="join_form">
-          <h2>회원 가입해주시기 바랍니다.</h2>
+          <h2 id="join_h2">회원 가입해주시기 바랍니다.</h2>
           <p class="t1">
             Viviana 웹사이트에 가입하시면 비비아나의 새로운 컬렉션을 만나볼 수 있으며,<br />
         	 비비아나 뉴스레터와 같은 다양한 정보를 받아보실 수 있습니다.</p>
@@ -111,7 +111,7 @@
     </div> <!-- category -->
 </div><!-- personal_info_inner_size -->
 
-<div class="requirement_info_inner_size"><h3>청구 정보</h3>
+<div class="requirement_info_inner_size"><h3 id="join_h3">청구 정보</h3>
             <div class="form-group required">
               <label class="form-control-label"> 주소 *<br />
                 <input type="text" class="form-control" name="address1" id="addr" placeholder="도, 시, 구, 대로명 작성" maxlength="35" onblur="addrCheck()" />

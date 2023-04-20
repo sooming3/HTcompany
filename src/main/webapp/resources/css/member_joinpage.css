@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
- main{
+ #join_main{
  width:100%;
   margin : 0 auto;
    background-image: url("resources/img/ff.jpg");
@@ -12,11 +12,11 @@
 	/* height: 100%; 적용불가...*/
 	
  }
- main .join_wrap{
+ #join_main .join_wrap{
  width: 100%;
 margin: 0 auto;
  }
-main .join_form {
+#join_main .join_form {
 	padding: 40px 0;
 	position: absolute;
 top:200px;	/* position: absolute;일때 top, left  필수 */
@@ -28,7 +28,7 @@ transform: translateX(-50%);
  	align: center;
 }
 
-h2 {
+#join_h2 {
   text-align: center;
   padding-top: 50px;
   font-size: 19px;
@@ -80,7 +80,7 @@ h2 {
   height: 26px;
 }
 
-h3 {
+#join_h3 {
   font-size: 17px;
   margin-bottom: 20px;
 }
