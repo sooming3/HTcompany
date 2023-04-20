@@ -49,7 +49,7 @@
     text-align:center;
     } 
     
-    label[for="text"]{
+    .la[for="text"]{
     position: absolute;
     top:650px;
     left: 55px;
