@@ -297,14 +297,14 @@
 	<!-- 메뉴자리끝 -->
 	
 	<!-- 스크롤 버튼 자리 -->
-	<div class="header_scrollbutton_all">
+<!-- 	<div class="header_scrollbutton_all">
 	<button class="header_scrollbutton"></button>
 	<button class="header_scrollbutton"></button>
 	<button class="header_scrollbutton"></button>
 	<button class="header_scrollbutton"></button>
 	<button class="header_scrollbutton"></button>
 	<button class="header_scrollbutton"></button>
-	</div>
+	</div> -->
 	<!-- 스크롤 버튼 자리 끝-->
 		
 	</div>

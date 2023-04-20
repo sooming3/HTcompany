@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@charset "UTF-8";
 
 *{
 	margin: 0 auto;
@@ -154,7 +153,7 @@ body {
 	margin-top: 10px;
 }
 
-.header_scrollbutton_all{
+/* .header_scrollbutton_all{
 	float: right;
 	margin-right: 50px;
 }
@@ -171,7 +170,7 @@ body {
 
 .header_scrollbutton:hover{
 	background-color: #E3C4FF;
-}
+} */
 
 
 
