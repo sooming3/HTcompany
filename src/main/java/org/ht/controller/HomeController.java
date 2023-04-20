@@ -54,6 +54,18 @@ public class HomeController {
 	return "member_loginpage";
 	}
 	
+	// 상세페이지로 이동하기
+	@RequestMapping(value="/product", method = RequestMethod.GET)
+	public String product() {
+	return "/product";
+	}
+	
+	// 상세페이지로 이동하기
+	@RequestMapping(value="/detail", method = RequestMethod.GET)
+	public String detail() {
+	return "/product_detail";
+	}
+	
 	// 리스트로 이동하기
 	@RequestMapping(value="/list", method = RequestMethod.GET)
 	public String list() {
