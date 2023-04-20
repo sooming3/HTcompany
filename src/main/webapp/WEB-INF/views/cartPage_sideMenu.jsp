@@ -42,3 +42,13 @@
 			<button class="button">구매하기</button>
 		</div>
 	</div>
+	
+	<!-- 선택 삭제 팝업 -->	
+	<div id="choicePopup">
+		<div align="right"><img onclick="deletePopup()" class="iconX" src="resources/img/icons_x.png"></div>
+		<p>선택한 상품을 쇼핑백에서 지우시겠습니까?</p>
+		<div>
+		<button class="button">확인</button>
+		<button onclick="deletePopup()" class="button">취소</button>
+		</div>
+	</div>

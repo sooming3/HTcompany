@@ -196,8 +196,8 @@
 #choicePopup{
 	z-index: 5;
 	position: absolute;
-	top: 8%;
-	left: 31%;
+	top: 150%;
+	left: 50%;
 	transform: translate( -50%, -50% );
 	display: none;
 	background-color: white;
@@ -374,7 +374,7 @@
 	top: 0px;
 	right: 0px;
 	box-shadow: 0 8px 32px gray;
-	overflow-y: scroll;
+/* 	overflow-y: scroll; */
  	display: none;
 }
 
