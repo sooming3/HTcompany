@@ -24,10 +24,10 @@
        <h3><label for="writer">작성자</label></h3>
         <span class="box"><input type ="text" class="int" value="관리자" readonly="readonly"></span>
        <h3><label for="answer">답변</label></h3>
-        <span class="answer_box"><textarea placeholder="내용을 입력해주세요."></textarea></span>
+        <span class="answer_box"><textarea class="answer_area" placeholder="내용을 입력해주세요."></textarea></span>
    
     <div class="button_area">
-       <button type="submit">
+       <button class="button1" type="submit">
 	      <span>확인</span>
 	   </button>
     </div>  

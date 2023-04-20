@@ -16,7 +16,7 @@
     <form name="myForm"  autocomplete="off" >
     
        <h3><label for="sele">분류*</label></h3>
-       <span class="box"><select id="select_value" required >
+       <span class="box"><select class="select1" id="select_value" required >
        <option value="0" >선택</option>
        <option value="1">제품문의</option>
        <option value="2">배송문의</option>
@@ -38,7 +38,7 @@
        <div id="numberError" class="error"></div>
         
        <h3><label for="text">문의내용</label></h3>
-       <span class="text_box"><textarea id="text" placeholder="내용을 입력해주세요."></textarea></span>
+       <span class="text_box"><textarea class="question_area"id="text" placeholder="내용을 입력해주세요."></textarea></span>
        
        <h3><label for="file" >첨부파일</label></h3>
        <div class="file_area">

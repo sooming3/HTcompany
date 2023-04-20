@@ -34,7 +34,7 @@
 				<div class="num">No.</div>
 				
 				<div class="sel">
-				<select name="select" >
+				<select class="sel_select" name="select" >
        				<option value="">카테고리</option>
        				<option value="1">제품문의</option>
      				<option value="2">배송문의</option>
