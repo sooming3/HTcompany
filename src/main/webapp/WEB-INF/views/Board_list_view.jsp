@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     
 <%@ include file ="viviana_header.jsp" %>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="resources/css/Board_list.css">
 
 </head>
-<body>
+<body> -->
 <div class = "board_wrap">
 	<div class ="board_title">
 		<h1>List</h1>
@@ -66,5 +66,5 @@
 			<a href="Board_list.jsp" > 삭제 </a>
 		</div>
 </div>
-</body>
-</html>
+<!-- </body>
+</html> -->

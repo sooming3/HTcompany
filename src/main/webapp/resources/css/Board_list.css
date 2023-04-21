@@ -26,7 +26,7 @@ a {
 html{
 	/*font-size:10px;
 	position: relative;*/
-	background-image:url("/resources/img/Board_back2.jpg");
+	background-image:url("../img/Board_back2.jpg");
 }
 
 /*board*/

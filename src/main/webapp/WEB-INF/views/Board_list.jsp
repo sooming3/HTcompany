@@ -3,7 +3,7 @@
     
 <%@ include file ="viviana_header.jsp" %>
 
-
+<!-- 
 <head>
 <meta charset="UTF-8">
 
@@ -13,7 +13,7 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body> -->
 
 <div class = "board_wrap">
 	<div class ="board_title">
@@ -149,4 +149,4 @@
 	</div>
 </div>
 
-</body>
+<!-- </body> -->

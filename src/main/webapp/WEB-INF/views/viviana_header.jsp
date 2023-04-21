@@ -50,6 +50,14 @@
 	<script src="resources/js/member_joinpage.js" type="text/javascript"></script>
 	<script src="resources/js/member_loginpage.js" type="text/javascript"></script>
 
+	<!-- 선영 -->
+	<link rel="stylesheet" href="resources/css/Board_answer.css">
+	<link rel="stylesheet" href="resources/css/Board_list.css">
+	<link rel="stylesheet" href="resources/css/Board_list.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="resources/js/Board_question.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="resources/css/Board_question.css">
+	
 </head>
 <body>
 

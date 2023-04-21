@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file ="viviana_header.jsp" %>
-
+<!-- 
 <title>QUESTION</title>
 <script src="resources/js/Board_question.js" type="text/javascript"></script>
 <link rel="stylesheet" href="resources/css/Board_question.css">
 
-<body style="overflow-x: hidden">
+<body style="overflow-x: hidden"> -->
 
 <div class= "wrap">
 
@@ -62,5 +62,5 @@
  </section>
 </div>
 
-</body>
-</html>
+<!-- </body>
+</html> -->

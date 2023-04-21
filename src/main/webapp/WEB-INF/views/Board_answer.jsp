@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file ="viviana_header.jsp" %>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -10,9 +10,9 @@
 
 </head>
 <body>
- <!-- header -->
+ header
 
- <!-- content -->
+ content -->
 <div class= "wrap">
 
  <section class="content">
@@ -35,6 +35,6 @@
  </section>
 </div>
 <!-- footer -->
- <footer id="footer"></footer> 
+<!--  <footer id="footer"></footer> 
 </body>
-</html>
+</html> -->
