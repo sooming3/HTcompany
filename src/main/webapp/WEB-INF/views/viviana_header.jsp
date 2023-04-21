@@ -52,8 +52,8 @@
 		<div class="header_icon_right">
 			<a href="#"><img onmouseover="view(true)" class="header_iconimg_right" src="resources/icon/shopping_icon.png" alt="쇼핑"></a>
 				<%@ include file="cartPage_sideMenu.jsp"%>
-			<a href="#"><img class="header_iconimg_right" src="resources/icon/like_icon.png" alt="좋아요"></a>
-			<a href="#"><img class="header_iconimg_right" src="resources/icon/login2_icon.png" alt="사용자"></a>
+			<a href="/list"><img class="header_iconimg_right" src="resources/icon/like_icon.png" alt="좋아요"></a>
+			<a href="/login"><img class="header_iconimg_right" src="resources/icon/login2_icon.png" alt="사용자"></a>
 			<a href="#"><img class="header_iconimg_right" src="resources/icon/notification_icon.png" alt="알림"></a>
 		</div>
 	
@@ -74,15 +74,15 @@
 						<span class="header_submenu_hi">
 							<span class="header_submenu_hi_sub">
 							<img src="resources/img/model_hi.jpg" width ="350px" height="auto">
-							<a class="header_menu_a" href="#">> 새로운 컬렉션</a>
+							<a class="header_menu_a" href="/detail">> 새로운 컬렉션</a>
 							</span>
 							<span class="header_submenu_hi_sub">
 							<img src="resources/img/model_hi.jpg" width ="350px" height="auto">
-							<a class="header_menu_a" href="#">> 매혹적인 작품</a>
+							<a class="header_menu_a" href="/detail">> 매혹적인 작품</a>
 							</span>
 							<span class="header_submenu_hi_sub">
 							<img src="resources/img/model_hi.jpg" width ="350px" height="auto">
-							<a class="header_menu_a" href="#">> 하이 주얼리 아트</a>
+							<a class="header_menu_a" href="/detail">> 하이 주얼리 아트</a>
 							</span>
 						</span>
 					</li>
