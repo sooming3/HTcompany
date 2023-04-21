@@ -37,6 +37,18 @@
     <!-- 수미 -->
     <link rel="stylesheet" type="text/css" href="src/main/webapp/resources/css/product.css"> 
     <link rel="stylesheet" type="text/css" href="src/main/webapp/resources/css/product_detail.css">
+    
+    <!-- 성언 -->
+    <link rel="stylesheet" href="resources/css/member_loginpage.css">
+	<link rel="stylesheet" href="resources/css/member_joinpage.css">
+	<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- 회원가입페이지 -비밀번호 눈 모양 아이콘 -->	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!--Font-aweome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<script src="resources/js/member_joinpage.js" type="text/javascript"></script>
+	<script src="resources/js/member_loginpage.js" type="text/javascript"></script>
 
 </head>
 <body>
