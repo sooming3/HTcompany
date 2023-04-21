@@ -1,93 +1,98 @@
 @charset "UTF-8";
 
 .container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		padding-top: 10px;
-		flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 10px;
+    flex-direction: row-reverse;
 }
 
-}
+
 /* 이미지 컨테이너 */
 .ring-img {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin-bottom: 20px;
-		margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-left:10px;
+     margin-right:10px;
 }
+
+
 
 /* 이미지 */
 .ring-img .con {
-		width: 500px;
-		height: 500px;
-		object-fit: contain;
-		margin-bottom: 10px;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 /* 제품 정보 */
 .product-style {
-		font-size: 18px;
-		font-weight: bold;
-		margin: 20px 0;
-		min-height: 100vh;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    min-height: 100vh;
+    text-align: right; /* 추가된 코드 */
 }
 
 .product-style_label {
-		margin-right: 5px;
+    margin-right: 5px;
 }
 
 .product-style_model {
-		margin-right: 5px;
-		color: #999;
+    margin-right: 5px;
+    color: #999;
 }
 
 .product-style_carat-details {
-		color: #999;
+    color: #999;
 }
 
 .product-icons {
-		display: flex;
-		align-items: center;
-		margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .product-icon {
-		margin-right: 10px;
+    margin-right: 10px;
 }
 
 /* 가격 */
 .product-icons span {
-		margin-right: 20px;
-		font-size: 24px;
-		font-weight: bold;
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* 상세 정보 */
 .product-description__container_detail_title {
-		font-size: 24px;
-		font-weight: bold;
-		margin-bottom: 10px;
-		min-height: 100vh;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-height: 100vh;
 }
 
 .product-description_romance-copy_text {
-		font-size: 18px;
-		line-height: 1.5;
-		overflow: hidden;
+    font-size: 18px;
+    line-height: 1.5;
+    
 }
 /* 글 오른쪽 정렬 */
 #product-main {
-		display: flex;
-		flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .product-style, .product-icons {
-		text-align: left;
+    text-align: right; /* 추가된 코드 */
 }
 
 .product-description_romance-copy {
-		text-align: left;
+    text-align: right; /* 추가된 코드 */
 }

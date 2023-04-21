@@ -22,7 +22,7 @@
 	<script src="resources/js/viviana_header.js" type="text/javascript"></script>
 	<!-- main js -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-	<script src="resources/js/viviana_index.js" type="text/javascript"></script>
+	<script src="resources/js/viviana_index.js" type="text/javascript">< /script>
 	<!-- Swiper JS -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -33,6 +33,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="resources/js/cartPage.js"></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- 수미 -->
+  <link rel="stylesheet" type="text/css" href="src/main/webapp/resources/css/product.css"> 
+  <link rel="stylesheet" type="text/css" href="src/main/webapp/resources/css/product_detail.css">
 
 </head>
 <body>
