@@ -334,3 +334,5 @@
 
 </div>
 <!-- 전체 페이지 종료 -->
+
+<%@ include file="viviana_footer.jsp"%>
