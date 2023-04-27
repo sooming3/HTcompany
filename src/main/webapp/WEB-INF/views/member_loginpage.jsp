@@ -4,6 +4,7 @@
     <%@ include file = "viviana_header.jsp" %>
     
 
+
   	<section id="login_section">
         <div class="inner_size">
           	<img src="resources/img/ring_3.jpg" id="login_image">
