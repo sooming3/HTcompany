@@ -22,21 +22,27 @@ a {
 /*body {
    background-image:url("../img/배경9.jpg");
 }*/
- 
+/*  
 html{
-	/*font-size:10px;
-	position: relative;*/
-	background-image:url("../img/Board_back2.jpg");
-}
+	font-size:10px;
+	position: relative;
+	
+} */
 
 /*board*/
+.boardPage {
+  width:100%;
+  height:150vh;
+  background-image:url("../img/Board_back2.jpg");
+}
+
 .board_wrap {
 	width: 1000px;
 	position:absolute;
 	left: 50%;
     transform: translate(-50%);
     padding-top:250px;
-    
+   
 }
 
 .board_title {

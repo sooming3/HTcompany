@@ -11,6 +11,7 @@
 
 </head>
 <body> -->
+<div class="boardPage">
 <div class = "board_wrap">
 	<div class ="board_title">
 		<h1>List</h1>
@@ -65,6 +66,7 @@
 			<a href="Board_question.jsp"  class="on"> 수정 </a>
 			<a href="Board_list.jsp" > 삭제 </a>
 		</div>
+</div>
 </div>
 <!-- </body>
 </html> -->

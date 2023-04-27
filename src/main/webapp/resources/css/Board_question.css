@@ -2,12 +2,13 @@
 
  /*content스타일*/
  	
- 	html {
- 	background-image:url("../img/Board_back.jpg");
- 
- 	}
+  .QuestionPage {
+    width:100%;
+    height:150vh;
+    background-image:url("../img/Board_back.jpg");
+  }
   
-   .content {
+   .Questioncontent {
      position:absolute;
      left: 50%;
      transform: translate(-50%);
@@ -15,7 +16,7 @@
  
    }  
        
-    form {
+    .question_form {
      width: 650px;
      height: 750px;
      padding:20px 0 10px 0;
@@ -23,15 +24,10 @@
      background-color:rgba( 255, 255, 255, 0.8 );
     }
     
-    .wrap {
-    /*background-color: #F6F6F6;*/
-    height:1500px;
-  	/*background-image:url("img/배경6.jpg");*/
-    }
-    
+
     
    /*content h1 스타일*/
-    .content h1 {
+    .Questioncontent h1 {
     width: 400px;
     height: 50px;
     margin: 0;
@@ -40,7 +36,7 @@
     
 
  /*content h3 스타일   inline-block으로 width와 height적용 가능하도록 */
-  .content h3 {
+  .Questioncontent h3 {
     margin: 15px 20px 17px 40px ;
     font-size:17px;
     font-weight: 700;
@@ -56,7 +52,7 @@
     }
     
     
-    .box {
+    .q_box {
     /*display:block;*/
     width: 400px;
     height: 50px; 
@@ -69,7 +65,7 @@
      margin: 0px 80px 0px 0px ;
     } 
      
-    .text_box{
+    .qtext_box{
     display: inline-block;
     width:  400px;
     height: 250px;
@@ -90,7 +86,7 @@
     border: none;
     }
      /*선택박스 스타일*/
-    .select1 {
+    .q_select1 {
     width: 370px;
     height: 25px;
     appearance: none;
@@ -99,7 +95,7 @@
     }
     
     /*입력박스 스타일*/
-    .int {
+    .q_int {
     display: block;
     position: relative;
     width: 100%;
@@ -108,7 +104,8 @@
     background: #fff;
     font-size: 15px;
     }
-   .file_area {
+    
+   .qfile_area {
     width:  400px;
     height: 40px;
     border: none;
@@ -117,7 +114,7 @@
     
    }
    
-    .int_file {
+    .qint_file {
     width: 100%;
     height: 40px;
   
@@ -125,13 +122,13 @@
     margin: 10px 0 0 10px;
     }
    
-   .view_area {
+   .qview_area {
     padding: 5px 10px;
     margin-right: 100px;
     display: inline-block;
    }
    
-   .view_area label {
+   .qview_area label {
     padding-left: 7px;
      font-size: 18px;
    }
@@ -139,7 +136,7 @@
 
 
  /*button 스타일*/
-    .button_area {
+    .qbutton_area {
     margin: 30px 0 90px;
     }
     
@@ -155,7 +152,7 @@
     transform: translate(-50%);
     }
     
-    .error{
+    .qerror{
     font-size: 11px;
     height: 20px;
     padding-left: 175px;

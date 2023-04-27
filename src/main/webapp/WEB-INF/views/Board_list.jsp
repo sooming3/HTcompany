@@ -14,7 +14,7 @@
 </head>
 
 <body> -->
-
+<div class="boardPage">
 <div class = "board_wrap">
 	<div class ="board_title">
 		<h1>List</h1>
@@ -148,5 +148,5 @@
 		</div>
 	</div>
 </div>
-
+</div>
 <!-- </body> -->
