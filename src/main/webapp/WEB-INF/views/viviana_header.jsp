@@ -20,9 +20,6 @@
 	<!-- header js -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script src="/resources/js/viviana_header.js" type="text/javascript"></script>
-	<!-- main js -->
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-	<script src="/resources/js/viviana_index.js" type="text/javascript"></script>
 	<!-- Swiper JS -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 

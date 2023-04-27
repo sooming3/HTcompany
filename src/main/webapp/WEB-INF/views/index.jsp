@@ -3,7 +3,7 @@
 
 <!-- header jsp -->
 <%@ include file="viviana_header.jsp" %>
-
+		
 		<!-- section1(영상) -->
 	    <div class="main_section" id="index_section1">
 	    <div class="main_video">
@@ -280,6 +280,28 @@
 	    	</div>
 	    </div>
 		<!-- section5(웨딩) 끝 -->
+		
+		<script>
+		var mHtml = $("html");
+		var page = 1;
+
+
+		mHtml.animate({scrollTop : 0},10);
+
+		$(window).on("wheel", function(e) {
+		    if(mHtml.is(":animated")) return;
+		    if(e.originalEvent.deltaY > 0) {
+		        if(page == 6) return;
+		        page++;
+		    } else if(e.originalEvent.deltaY < 0) {
+		        if(page == 1) return;
+		        page--;
+		    }
+		    var posTop =(page-1) * $(window).height();
+		    mHtml.animate({scrollTop : posTop});
+		})
+
+		</script>
 
  <!-- footer jsp -->
 <%@ include file="viviana_footer.jsp" %>
