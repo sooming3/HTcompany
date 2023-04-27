@@ -383,6 +383,10 @@
 	text-align: center;
 }
 
+#sideMenu a:hover{
+	color: #8C8C8C;
+}
+
 #sideMenu h4{
 	margin-bottom: 10px;
 }

@@ -3,7 +3,7 @@
 
 <!-- 사이드 메뉴 -->
 	<div id="sideMenu" onmouseout="view(false)" onmouseover="view(true)">
-		<h2>쇼핑백 (3)</h2>
+		<h2><a href="/cart" title="쇼핑백으로 이동">쇼핑백 (3)</a></h2>
 		<hr>
 	<div class="sideMenuGoods">
  		<img class="icon_remove" src="resources/img/icon_remove.png" onclick="choicePopup()">
