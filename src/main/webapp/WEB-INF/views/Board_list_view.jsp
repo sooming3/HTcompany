@@ -63,8 +63,8 @@
 	 	</div>
 	</div>
 		<div class="bt_wrap">
-			<a href="Board_question.jsp"  class="on"> 수정 </a>
-			<a href="Board_list.jsp" > 삭제 </a>
+			<a href="#" onclick="location.href='http://localhost:8080/question'" class="on"> 수정 </a>
+			<a href="#" onclick="location.href='http://localhost:8080/list'"> 삭제 </a>
 		</div>
 </div>
 </div>

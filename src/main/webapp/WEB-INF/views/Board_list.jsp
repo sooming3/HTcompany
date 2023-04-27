@@ -52,7 +52,7 @@
 			<div>
 				<div class="num">10</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -60,7 +60,7 @@
 			<div>
 				<div class="num">9</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -68,7 +68,7 @@
 			<div>
 				<div class="num">8</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -76,7 +76,7 @@
 			<div>
 				<div class="num">7</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -84,7 +84,7 @@
 			<div>
 				<div class="num">6</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -92,7 +92,7 @@
 			<div>
 				<div class="num">5</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -100,7 +100,7 @@
 			<div>
 				<div class="num">4</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -108,7 +108,7 @@
 			<div>
 				<div class="num">3</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -116,7 +116,7 @@
 			<div>
 				<div class="num">2</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -124,7 +124,7 @@
 			<div>
 				<div class="num">1</div>
 				<div class="sel">제품문의</div>
-				<div class="title"><a href="Board_list_view.jsp">title</a></div>
+				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
 				<div class="writer">박선영</div>
 				<div class="date">2023.03.10</div>
 				<div class="count">2</div>
@@ -144,7 +144,7 @@
 		
 		</div>
 		<div class="bt_wrap">
-			<a href="Board_question.jsp" class="on"> 글 작성 </a>
+			<a href="#" class="on" onclick="location.href='http://localhost:8080/question'"> 글 작성 </a>
 		</div>
 	</div>
 </div>
