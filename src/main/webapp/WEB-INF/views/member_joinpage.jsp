@@ -15,7 +15,7 @@
         	 비비아나 뉴스레터와 같은 다양한 정보를 받아보실 수 있습니다.</p>
         	 
  <form name="formTotal" id="joinForm">  <!-- reset -->     	 
-<div class="login_info_inner_size"><h3>로그인정보</h3>
+<div class="login_info_inner_size"><h3 class="join_h3">로그인정보</h3>
        <div class="form-group required">
               <label class="form-control-label">이메일 주소 *<br />
               <input type="email" class="form-control" id="registration-form-email" name="email" onblur="emailCheck()"/><br>
@@ -42,7 +42,7 @@
 </div><!-- login_info_inner_size -->
 
 
-<div class="personal_info_inner_size"><h3>개인정보</h3>
+<div class="personal_info_inner_size"><h3 class="join_h3">개인정보</h3>
         <div class="form-group required">
               <label class="form-control-label">이름 *<br />
                 <input type="text" maxlength="7" class="form-control" id="registration-form-fname" onblur="fnameCheck()"/><br>
@@ -111,7 +111,7 @@
     </div> <!-- category -->
 </div><!-- personal_info_inner_size -->
 
-<div class="requirement_info_inner_size"><h3 id="join_h3">청구 정보</h3>
+<div class="requirement_info_inner_size"><h3 class="join_h3">청구 정보</h3>
             <div class="form-group required">
               <label class="form-control-label"> 주소 *<br />
                 <input type="text" class="form-control" name="address1" id="addr" placeholder="도, 시, 구, 대로명 작성" maxlength="35" onblur="addrCheck()" />

@@ -81,9 +81,11 @@ transform: translateX(-50%);
   height: 26px;
 }
 
-#join_h3 {
-  font-size: 17px;
+.join_h3 {
+	font-family: Sans-Serif;
+  font-size: 18px;
   margin-bottom: 20px;
+  color: #5D5D5D;
 }
 
 #join_select{
