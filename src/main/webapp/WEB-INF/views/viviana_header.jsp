@@ -70,7 +70,7 @@
 		</div>
 		
 		<div class="header_icon_right">
-			<a href="#"><img onmouseover="view(true)" class="header_iconimg_right" src="/resources/icon/shopping_icon.png" alt="쇼핑"></a>
+			<a href="/cart"><img onmouseover="view(true)" class="header_iconimg_right" src="/resources/icon/shopping_icon.png" alt="쇼핑"></a>
 				<%@ include file="cartPage_sideMenu.jsp"%>
 			<a href="/list"><img class="header_iconimg_right" src="/resources/icon/like_icon.png" alt="좋아요"></a>
 			<a href="/login"><img class="header_iconimg_right" src="/resources/icon/login2_icon.png" alt="사용자"></a>
