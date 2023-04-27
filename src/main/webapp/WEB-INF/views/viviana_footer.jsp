@@ -2,14 +2,14 @@
     pageEncoding="UTF-8"%>
     
     <!-- section6(footer) -->
-    <div class="section" id="footer" align="center">
+    <div class="main_section" id="footer" align="center">
     	
     	<!-- footer_news -->
     	<div class="footer_news">
 	    	<p>뉴스레터를 구독해보세요!</p>
 	    	<!-- <button>가입하기</button> -->
-	    	<div class="frame">
-	    	 <button class="custom-btn btn-16">가입하기</button>
+	    	<div class="footer_frame">
+	    	 <button class="footer_custom-btn footer_btn-16">가입하기</button>
 	    	 </div>
     	</div>
     	<!-- footer_news끝 -->
