@@ -22,7 +22,7 @@
 		              <span id="passwordspan"></span><br>
 		           <div id="loginbtn">
 		            <input type="button" value="로그인 하기" class="btn"  onclick="login()" /><br />
-		            <input type="button" value="새로운 계정 만들기" class="btn" onclick="location.href = 'joinPageFinal.jsp'" />
+		            <input type="button" value="새로운 계정 만들기" class="btn" onclick="location.href='http://localhost:8080/join'" />
 		           </div>
 		          </form>
           </div>

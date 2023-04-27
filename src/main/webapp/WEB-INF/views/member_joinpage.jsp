@@ -154,7 +154,7 @@
 			    
          		 </div><!-- check -->
          		         <div class="btnWrap">
-			              <input type="reset" value="취소"  onclick="location.href = 'joinPageFinal.jsp'" class="btn">
+			              <button onclick="location.href='http://localhost:8080/join'" class="btn">취소</button>
 			              <input type="button"  value="계정 만들기" class="btn" onclick="form_submit()" />
 			              <!-- 
 		button과 달리 submit은 기본적으로 클릭시 form에 적혀있는 action 파일로 이동하는데
