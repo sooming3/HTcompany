@@ -82,7 +82,7 @@ body {
 }
 
 .header_menu>li>a{
-	line-height: 40px;
+	line-height: 36px; /* 라인 높이 */
 	font-size: 12px;
 	text-align: center;
 	color: #000;
@@ -91,6 +91,7 @@ body {
 }
 
 .header_menu>li>a:hover{
+	line-height: 34px; /* 마우스 올렸을때 라인 높이 */
 	width: 100px;
 	font-weight: bold;
 	border-bottom: solid 2px #E3C4FF;
