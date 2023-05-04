@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="org.ht.mapper.MemberMapper">
+  	<insert id="memreg">
+		insert into viviana_member 
+		values (#{User_id},#{User_password},#{User_name},#{User_phone},
+		#{User_gender},#{User_birth},#{User_interest},#{User_addr1},#{User_addr2},#{User_addr3},
+		#{User_marketing_agree}, sysdate());  	
+  	</insert>
+  	
+  	
+  </mapper>

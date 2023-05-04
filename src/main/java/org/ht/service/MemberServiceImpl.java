@@ -1,0 +1,21 @@
+package org.ht.service;
+
+import org.ht.mapper.MemberMapper;
+import org.ht.model.MemberVO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+
+
+
+@Service
+public class MemberServiceImpl implements MemberService {
+	
+	@Autowired
+	MemberMapper mm;
+	
+	public MemberVO memreg(MemberVO member) {
+		return mm.memreg(member);
+	}
+}

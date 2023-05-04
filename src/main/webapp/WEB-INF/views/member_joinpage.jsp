@@ -16,7 +16,7 @@
             Viviana 웹사이트에 가입하시면 비비아나의 새로운 컬렉션을 만나볼 수 있으며,<br />
         	 비비아나 뉴스레터와 같은 다양한 정보를 받아보실 수 있습니다.</p>
         	 
- <form name="formTotal" id="joinForm">  <!-- reset -->     	 
+ <form name="formTotal" id="joinForm" action="/memberin" method="post">  <!-- reset -->     	 
 <div class="login_info_inner_size"><h3 class="join_h3">로그인정보</h3>
        <div class="form-group required">
               <label class="form-control-label">이메일 주소 *<br />
@@ -86,23 +86,23 @@
       		<div><p>하나 이상의 관심 카테고리를 선택해주시기 바랍니다.</p></div>
    
 	        <div>
-	          <input type="checkbox"class="checkbox" name="cbox" id="checkbox1"/>
+	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox1" value="ring"/>
 	          <label for="preferences_ring" class="checkbox-label">반지</label>
 	        </div>
 	        <div>
-	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox2"/>
+	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox2" value="necklace"/>
 	          <label for="preferences_necklace" class="checkbox-label">목걸이</label>
 	        </div>
 	        <div>
-	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox3"/>
+	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox3" value="earring"/>
 	          <label for="preferences_earring" class="checkbox-label" >귀걸이</label>
 	        </div>
 	        <div>
-	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox4"/>
+	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox4" value="bracelet"/>
 	          <label for="preferences_bracelet" class="checkbox-label">팔찌</label>
 	        </div>
 	        <div>
-	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox5"/>
+	          <input type="checkbox" class="checkbox" name="cbox" id="checkbox5" value="anklet"/>
 	          <label for="preferences_anklet" class="checkbox-label">발찌</label>
 	        </div>
 
