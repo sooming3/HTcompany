@@ -68,5 +68,6 @@
 		</div>
 </div>
 </div>
+<%@ include file ="viviana_footer.jsp" %>
 <!-- </body>
 </html> -->
