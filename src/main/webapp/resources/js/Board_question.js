@@ -40,6 +40,7 @@ function numberchk(){
 
 }
 
+
 // 확인버튼 클릭 시 유효성 검사
 function LastCheck(){
 	
@@ -76,7 +77,19 @@ function LastCheck(){
 	    	  document.getElementById("writerError").innerHTML="이름 또는 아이디를 입력하세요."
 	    	return false;
 	    }
-	    
+	 
+	// 비공개 글 선택 시 비밀번호 입력하지 않으면 알림표시
+	 var publicOption = document.getElementById("yes");
+	 var privateOption = document.getElementById("no");
+	 var passwordInput = document.getElementById("password");
+	 var pwError = document.getElementById("pwError");
+
+	 if (privateOption.checked && passwordInput.value === "") {
+	     pwError.textContent = "비밀번호를 입력해주세요.";
+	      // 알림 표시
+	      alert("비밀번호를 입력해주세요.");
+	    } 
+	      
 	// 모든 조건 만족 시 문의 사항 등록    
 	  else{
 			alert("등록되었습니다");

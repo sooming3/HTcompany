@@ -52,8 +52,8 @@
        </div>
        
        <h3><label class="la" for="viewPw">비밀번호*</label></h3>
-       <span class="q_box"><input type ="text" id="pw" class="q_int"  onblur="pwchk()" placeholder="내용을 입력해주세요." ></span>
-       <div id="pwError" class="qerror"></div>
+        <span class="q_box"><input type ="text" id="password" class="q_int"  onblur="pwchk()" placeholder="비공개 선택 시 입력해주세요." ></span>
+        <div id="pwError" class="qerror"></div> 
 
        <div class="qbutton_area">
          <input type="button" class="subbutton" value="확인" onclick="LastCheck()" >
