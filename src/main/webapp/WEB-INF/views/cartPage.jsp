@@ -149,7 +149,7 @@
 			
 				
 					<div class="shipping-info">
-						<p class="title">재고 보유</p>
+						<p class="stock_status"><b>재고 보유</b></p>
 						<div class="subtitle">1~3일 이내 발송 가능한 상품입니다.</div>
 					</div>
 				
@@ -206,7 +206,7 @@
 			
 				
 					<div class="shipping-info">
-						<p class="title">재고 보유</p>
+						<p class="stock_status"><b>재고 보유</b></p>
 						<div class="subtitle">1~3일 이내 발송 가능한 상품입니다.</div>
 					</div>
 				

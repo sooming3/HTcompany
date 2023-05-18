@@ -6,16 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-
-
-
 @Service
 public class MemberServiceImpl implements MemberService {
 	
 	@Autowired
 	MemberMapper mm;
 	
-	public MemberVO memreg(MemberVO member) {
-		return mm.memreg(member);
+	public void memreg(MemberVO member) {
+		mm.memreg(member);
 	}
 }

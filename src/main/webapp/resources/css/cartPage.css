@@ -106,7 +106,6 @@
 .quantity{
 	display: inline-block;
 	float: right;
-	margin: 0 25px;
 }
 
 .price-label{
@@ -196,7 +195,7 @@
 #choicePopup{
 	z-index: 5;
 	position: absolute;
-	top: 150%;
+	top: 400%;
 	left: 50%;
 	transform: translate( -50%, -50% );
 	display: none;
@@ -275,7 +274,7 @@
 #removePopup{
 	z-index: 5;
 	position: absolute;
-	top: 8%;
+	top: 7%;
 	left: 31%;
 	transform: translate( -50%, -50% );
 	display: none;

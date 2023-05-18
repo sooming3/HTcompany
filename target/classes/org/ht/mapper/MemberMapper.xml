@@ -6,10 +6,10 @@
   
   <mapper namespace="org.ht.mapper.MemberMapper">
   	<insert id="memreg">
-		insert into viviana_member 
+		insert into Viviana_member 
 		values (#{User_id},#{User_password},#{User_name},#{User_phone},
 		#{User_gender},#{User_birth},#{User_interest},#{User_addr1},#{User_addr2},#{User_addr3},
-		#{User_marketing_agree}, sysdate());  	
+		#{User_marketing_agree}, now());  	
   	</insert>
   	
   	

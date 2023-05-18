@@ -1,3 +1,15 @@
+// 카테고리 checkbox 배열 저장
+$(document).ready(function(){
+		$("#category_check").on('click', function(){ //계정만들기 버튼 클릭시
+			var categoryItem = []; // 배열로 저장
+			
+			$("input[name=User_interest]:checked").each(function(){
+				categoryItem.push($(this).val());
+			});
+			alert(categoryItem);
+		});
+});
+
 
 // keydown이벤트 추가 후 엔터키 이벤트 제거하기
 document.addEventListener('keydown', function(event) {
@@ -133,9 +145,9 @@ function phoneCheck(){
 // 카테고리 선택
 function checkAll(){
 	if($("#cboxAll").is(':checked')){
-		$("input[name=cbox]").prop("checked", true);
+		$("input[name=User_interest]").prop("checked", true);
 	}else{
-		$("input[name=cbox]").prop("checked", false);
+		$("input[name=User_interest]").prop("checked", false);
 	}
 }
 

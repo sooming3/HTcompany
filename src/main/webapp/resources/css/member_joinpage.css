@@ -133,7 +133,7 @@ transform: translateX(-50%);
   justify-content: space-between;
   
 }
-.btn {
+.join_submitBtn {
 	background-color: lavender;
   cursor: pointer;
   border: none;
@@ -144,7 +144,7 @@ transform: translateX(-50%);
   margin-left: 22px;
 }
 
-.btn:hover{
+.join_submitBtn:hover{
 	background-color: #E3C4ff;
 }
 

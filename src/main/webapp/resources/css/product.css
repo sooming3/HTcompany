@@ -7,7 +7,7 @@ body {
 		background-repeat: no-repeat;
 }
 
-.container {
+.product_modify_container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -15,7 +15,7 @@ body {
 		padding-top: 10px;
 }
 
-#main {
+#product_modify_container_main {
 		max-width: 600px;
 		padding: 30px;
 		border: 1px solid #ccc;
@@ -26,7 +26,7 @@ body {
 		padding-top: 10px;
 }
 
-.title {
+.product_modify_title {
 		margin-top: 10;
 		margin-bottom: 100;
 		margin-left: 200px;
@@ -34,11 +34,11 @@ body {
 		justify-content: center;
 }
 
-.bold {
+.product_modify_bold {
 		font-weight: bold;
 }
 
-.field {
+.product_modify_field {
 		display: flex;
 		flex-direction: row;
 		align-items: left;
@@ -46,14 +46,14 @@ body {
 		padding-top: 10px;
 }
 
-.field span.bold {
+.product_modify_field span.bold {
 		margin-left: 0px;
 		margin-right: 0px;
 		width: 90px;
 		align-items: left;
 }
 
-.field input[type=text], .field input[type=number], .field textarea {
+.product_modify_field input[type=text], .field input[type=number], .field textarea {
 		padding: 5px;
 		border: 1px solid #ccc;
 		border-radius: 5px;
@@ -62,19 +62,19 @@ body {
 		font-size: 16px;
 }
 
-.field.textarea {
+.product_modify_field.textarea {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 }
 
-.field.textarea span.bold {
+.product_modify_field.textarea span.bold {
 		margin-bottom: 5px;
 		margin-left: 0px;
 		margin-right: 0px;
 }
 
-.field.textarea textarea {
+.product_modify_field.textarea textarea {
 		width: 100%;
 		min-height: 200px;
 }
@@ -86,21 +86,21 @@ body {
     margin-right: 0;
    
 }*/
-.field.category {
+.product_modify_field.category {
 		flex-direction: row;
 		margin-top: 10px;
 		padding: 88;
 		padding-top: 10px;
 }
 
-.category select {
+.product_modify_category select {
 		margin-top: 5px;
 		margin-left: 10;
 		margin-right: 0;
 		padding-top: 0px;
 }
 
-select {
+product_modify_select {
 		margin-left: 0;
 		width: 100px;
 }
@@ -129,7 +129,7 @@ input[type=submit]:hover {
 }
 
 
-#detail-save{
+#product_modify_etail-save{
 	background-color: #81c147;
     color: white;
     border: none;
