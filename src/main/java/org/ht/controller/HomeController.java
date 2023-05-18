@@ -96,4 +96,9 @@ public class HomeController {
 	return "cartPage";
 	}
 	
+	// 상품 리스트로 이동하기
+	@RequestMapping(value="/goodslist", method = RequestMethod.GET)
+	public String goodsList() {
+	return "goods_list";
+	}
 }
