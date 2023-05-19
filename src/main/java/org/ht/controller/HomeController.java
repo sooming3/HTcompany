@@ -74,7 +74,7 @@ public class HomeController {
 	
 	// 리스트로 이동하기
 	@RequestMapping(value="/answer", method = RequestMethod.GET)
-	public String answer() {
+	public String answer() { 
 	return "Board_answer";
 	}
 	

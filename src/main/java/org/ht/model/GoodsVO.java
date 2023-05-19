@@ -1,6 +1,6 @@
 package org.ht.model;
 
-public class GoodsVO {
+public class GoodsVO { 
 	
 	private int g_num;
 	private String g_name;

@@ -8,7 +8,7 @@ public class CartVO {
 	private int c_quantity;
 	private String c_result;
 	private String c_indate;
-	
+	 
 	
 	public int getC_num() {
 		return c_num;
