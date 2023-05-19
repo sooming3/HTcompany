@@ -22,7 +22,7 @@ body {
 #header{
 	width: 100%;
 	background-color: rgba( 255, 255, 255, 0.5 );
-	height:127px;
+	height:125px;
 	position: fixed;
 	z-index:20;
 }
@@ -90,12 +90,12 @@ body {
 	display: block;
 }
 
-.header_menu>li>a:hover{
-	line-height: 34px; /* 마우스 올렸을때 라인 높이 */
+/* .header_menu>li>a:hover{
+	line-height: 34px; 마우스 올렸을때 라인 높이
 	width: 100px;
 	font-weight: bold;
 	border-bottom: solid 2px #E3C4FF;
-}
+} */
 
 .header_submenu{
 	display: none;
@@ -122,9 +122,77 @@ body {
 
 .header_submenu_hi_sub{
 	float: left;/* inline요소로 되게 한다. */
-	margin-left: 10px;
+/* 	margin-left: 10px;
 	margin-right: 10px;
-	margin-top: 10px;
+	margin-top: 10px; */
+	margin: 10px;
+	/* position: relative; */
+}
+
+/* .header_hi_img{
+    display: block;
+	z-index: 1;
+	position: absolute;
+} */
+
+/* .header_imgbox{
+	z-index: 9;
+	position: absolute;
+	width: 300px;
+	height:50px;
+	background-color: #e6e6e6;
+	display: block;
+} */
+
+
+
+
+/*----*/
+
+
+
+/* .color-6 {
+  background: #353535;
+} */
+
+.SMN_effect-46 .header_a {
+	position: relative;
+/* 	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s; */
+}
+
+.SMN_effect-46 .header_a:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	height: 2px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #E3C4FF;
+	-webkit-transform: scaleX(0);
+	/* transform: scaleX(0); */
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+/* 	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.5s; */
+	transition-duration: 0.5s;
+/* 	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out; */
+}
+
+.SMN_effect-46 .header_a:hover:before, .SMN_effect-46 .header_a:focus:before, .SMN_effect-46 .header_a:active:before {
+	/* -webkit-transform: scaleX(1); */
+	transform: scaleX(1);
+	/* -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); */
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
 .header_submenu_j{
@@ -138,9 +206,19 @@ body {
 	margin-top: 10px;
 }
 
+.header_menu_a_bold{
+	margin-top:5px;
+	display: block;
+	font-weight: bold;
+	line-height: 2.0;
+	font-size: 1.0em;
+}
+
 .header_menu_a{
 	margin-top:5px;
 	display: block;
+	line-height: 1.8;
+	font-size: 0.9em;
 }
 
 .header_submenu_w{
@@ -153,6 +231,7 @@ body {
 	margin-right: 50px;
 	margin-top: 10px;
 }
+
 
 /* .header_scrollbutton_all{
 	float: right;

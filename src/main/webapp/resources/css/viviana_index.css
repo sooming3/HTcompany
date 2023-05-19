@@ -1,5 +1,28 @@
 @charset "UTF-8";
 
+.main_section_button{
+	z-index:9;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	right: 5px;
+	top: 200px;
+}
+
+.main_section_button_color{
+	margin: 2px;
+    width: 15px;
+    height: 15px;
+	background-color: #bcbcbc;
+	border-radius:10px;
+	border:none;
+	margin-left: 0;
+}
+
+.main_section_button_color:hover{
+	background-color: #E3C4FF;
+}
+
 /* main section css */
 .main_section {
     width: 100%;

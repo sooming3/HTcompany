@@ -3,6 +3,17 @@
 
 <!-- header jsp -->
 <%@ include file="viviana_header.jsp" %>
+
+		<div class="main_section_button">
+		
+			<div class="main_section_button_color">1</div>
+			<div class="main_section_button_color">2</div>
+			<div class="main_section_button_color">3</div>
+			<div class="main_section_button_color">4</div>
+			<div class="main_section_button_color">5</div>
+			<div class="main_section_button_color">6</div>
+		
+		</div>
 		
 		<!-- section1(영상) -->
 	    <div class="main_section" id="index_section1">
@@ -264,7 +275,7 @@
 	    	<div class="main_section5_wedding">
 	    		<div class="main_section5_left">
 	    			<div class="main_section5_img">
-						<img class="main_gift_model1" alt="이미지1" src="/resources/img/gift_ps110.jpg">
+						<img class="main_gift_model1" alt="이미지1" src="/resources/img/wedding_02.jpg">
 					</div>
 	    		</div>
 	    	
@@ -284,7 +295,6 @@
 		<script>
 		var mHtml = $("html");
 		var page = 1;
-
 
 		mHtml.animate({scrollTop : 0},10);
 
