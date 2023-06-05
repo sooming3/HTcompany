@@ -13,4 +13,10 @@
   	</insert>
   	
   	
+  	<select id="login" resultType="org.ht.model.MemberVO">
+  		select User_id, User_password
+  		from Viviana_member
+  		where User_id=#{User_id} and User_password=#{User_password}
+  	</select>
+  	
   </mapper>

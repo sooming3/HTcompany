@@ -140,7 +140,10 @@ function phoneCheck(){
 	}
 }
 
-
+// 생일 달력 위젯
+$(function() {
+	  $("#datepicker").datepicker();
+	});
 
 // 카테고리 선택
 function checkAll(){
@@ -296,7 +299,7 @@ function agreeCheckComplete(){
 
 // 도로명 (우편번호) 검색 - daum postcode
 // https://lkt01010.tistory.com/113
-function execDaumPostcode() {
+function sample6_execDaumPostcode() {
     new daum.Postcode({
         oncomplete: function(data) {
             // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
@@ -371,8 +374,8 @@ function form_submit(){
 	var phone = document.getElementById("phone");
 	var phoneJ =  /^.{1,30}$/;
 	// 성별 각각 라디오체크 유무 확인
-	var female = document.getElementById("female");
-	var male = document.getElementById("male");
+/*	var female = document.getElementById("female");
+	var male = document.getElementById("male");*/
 	// 청구정보
 	var address = document.getElementById("addr");
 	var addressJ =  /^.{1,30}$/;
@@ -406,10 +409,10 @@ function form_submit(){
 		alert("연락처는 필수입력 사항입니다.");
 		phone.focus();
 		return false;							
-	}else if(!male.checked && female.checked){
+	/*}else if(!male.checked && female.checked){
 		alert("성별 체크해주세요.");
 		female.focus();
-		return false;
+		return false;*/
 	}else if(!addressJ.test(address.value)){
 		alert("주소는 필수입력 사항입니다.");
 		address.focus();

@@ -22,7 +22,7 @@
 	<script src="/resources/js/viviana_header.js" type="text/javascript"></script>
 	<!-- Swiper JS -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
+	
 	<!-- 희영 -->
 	<link rel="stylesheet" type="text/css" href="/resources/css/cartPage.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,6 +46,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<script src="/resources/js/member_joinpage.js" type="text/javascript"></script>
 	<script src="/resources/js/member_loginpage.js" type="text/javascript"></script>
+	<!-- 회원가입 생일 달력위젯 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
 
 	<!-- 선영 -->
 	<link rel="stylesheet" href="/resources/css/Board_answer.css">

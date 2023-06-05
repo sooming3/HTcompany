@@ -8,11 +8,14 @@ public class MemberVO{
 	private String User_gender;
 	private String User_birth;
 	private String User_interest;
+	private String postnum;
 	private String User_addr1;
 	private String User_addr2;
 	private String User_addr3;
 	private String User_marketing_agree;
 	private String User_regdate;
+	
+	
 	public String getUser_id() {
 		return User_id;
 	}
@@ -86,15 +89,22 @@ public class MemberVO{
 		User_regdate = user_regdate;
 	}
 	
+	
+
+	public String getPostnum() {
+		return postnum;
+	}
+	public void setPostnum(String postnum) {
+		this.postnum = postnum;
+	}
+	
+	
 	@Override
 	public String toString() {
 		return "MemberVO [User_id=" + User_id + ", User_password=" + User_password + ", User_name=" + User_name
 				+ ", User_phone=" + User_phone + ", User_gender=" + User_gender + ", User_birth=" + User_birth
-				+ ", User_interest=" + User_interest + ", User_addr1=" + User_addr1 + ", User_addr2=" + User_addr2
-				+ ", User_addr3=" + User_addr3 + ", User_marketing_agree=" + User_marketing_agree + ", User_regdate="
-				+ User_regdate + "]";
+				+ ", User_interest=" + User_interest + ", postnum=" + postnum + ", User_addr1=" + User_addr1
+				+ ", User_addr2=" + User_addr2 + ", User_addr3=" + User_addr3 + ", User_marketing_agree="
+				+ User_marketing_agree + ", User_regdate=" + User_regdate + "]";
 	}
-	
-	
-	
 }

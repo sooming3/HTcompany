@@ -2,11 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <%@ include file = "viviana_header.jsp" %>
-
 <body>
-
-
-
 <div id="wrap1">
 <div id="join_main">
 <div class="join_wrap">
@@ -16,7 +12,9 @@
             Viviana 웹사이트에 가입하시면 비비아나의 새로운 컬렉션을 만나볼 수 있으며,<br />
         	 비비아나 뉴스레터와 같은 다양한 정보를 받아보실 수 있습니다.</p>
         	 
- <form name="formTotal" id="joinForm" action="/memberin" method="post">  <!-- reset -->     	 
+ <form name="formTotal" id="joinForm" action="/memberin" method="post" onsubmit="return form_submit()">  <!-- reset -->     	
+ 											<!-- onsubmit 속성을 추가하여 js 함수를 호출하고, 함수 내에서 필요한 유효성 검사를 수행하기  --> 
+ 											
 <div class="login_info_inner_size"><h3 class="join_h3">로그인정보</h3>
        <div class="form-group required">
               <label class="form-control-label">이메일 주소 *<br />
@@ -24,6 +22,7 @@
               <span class="hiddenText" id="spanEmail"></span>
               </label>
               <button type="button" class="join_checkbtn" id="dchk" onclick="id_check()">중복확인</button>
+              <button type="button" class="join_checkbtn" id="" onclick="">이메일 인증</button>
        </div>
        <div class="form-group required" class="showPW">
               <label class="form-control-label">비밀번호*<br />
@@ -59,7 +58,7 @@
          </div>
 
          <div>
-           <label class="form-group required">성별 *<br />
+           <label class="form-group required">성별<br />
              <input type="radio" value="female" name="User_gender" id="female" class="gender">여성<br>
              <input type="radio" value="male" name="User_gender" id="male" class="gender">남성<br>
              <span class="hiddenText"  id="spanGender"></span><br>
@@ -68,6 +67,10 @@
 
          <div>
            <label>생일(선택 사항)</label><br />
+           <input type="text" id="datepicker">
+         <!--  년도는 생략 <select>
+           	<option>선택</option><option></option>
+           </select> -->
            <select id="join_select" name="User_birth">
              <option>선택</option><option>1월</option><option>2월</option><option>3월</option><option>4월</option>
              <option>5월</option><option>6월</option><option>7월</option><option>8월</option><option>9월</option><option>10월</option>
@@ -116,7 +119,7 @@
 
 <div class="requirement_info_inner_size"><h3 class="join_h3">청구 정보</h3>
             <div class="form-group required">
-              <label class="form-control-label"> 주소 *<br />
+             <!--  <label class="form-control-label"> 주소 *<br />
                 <input type="text" class="form-control" name="User_addr1" id="addr" placeholder="도, 시, 구, 대로명 작성" maxlength="35" onblur="addrCheck()" />
               	<span id="addrSpan" class="hiddenText" ></span><br>
               </label>
@@ -131,8 +134,13 @@
               <label class="form-control-label">우편번호<br />
                 <input type="text" name="User_addr3" class="form-control" id="postNum" onblur=""/>
                 <span id="" class="hiddenText" ></span><br>
-              </label>
-              <button type="button" class="join_checkbtn" onclick="execDaumPostcode()" >검색</button>
+              </label> -->
+            <input type="text" id="sample6_postcode" name="postnum" placeholder="우편번호"><!-- 우편번호 name 속성 지정하고, db에 우편번호 지정할 열 생성하기 , loginVO에도 추가 etc -->
+            <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+			<input type="text" id="sample6_address" name="User_addr1" placeholder="주소"><br>
+			<input type="text" id="sample6_detailAddress" name="User_addr2" placeholder="상세주소">
+			<input type="text" id="sample6_extraAddress" name="User_addr3" placeholder="참고항목">
+              <!-- <button type="button" class="join_checkbtn" onclick="execDaumPostcode()" >검색</button> -->
             </div>
 </div><!-- requirement_info_inner_size -->
 
@@ -158,7 +166,7 @@
          		 </div><!-- check -->
          		         <div class="btnWrap">
 			              <button onclick="location.href='http://localhost:8080/join'" class="join_submitBtn">취소</button>
-			              <input type="submit"  value="계정 만들기" id="join_form_submit" class="join_submitBtn"  /> <!--onclick="form_submit()"  -->
+			              <input type="submit"  value="계정 만들기" id="join_form_submit" class="join_submitBtn" /> <!--onclick="form_submit()"  -->
 			              <!-- 
 		button과 달리 submit은 기본적으로 클릭시 form에 적혀있는 action 파일로 이동하는데
 		onClick 속성으로 아래와 같이 함수를 주면 action 으로 이동하기 전에 유효성 검사를 진행할 수 있다. 

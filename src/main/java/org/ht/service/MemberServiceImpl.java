@@ -15,4 +15,10 @@ public class MemberServiceImpl implements MemberService {
 	public void memreg(MemberVO member) {
 		mm.memreg(member);
 	}
+
+	public MemberVO login(MemberVO member) {
+		return mm.login(member);
+	}
+
 }
+
