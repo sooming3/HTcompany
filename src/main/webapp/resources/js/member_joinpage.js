@@ -373,15 +373,13 @@ function form_submit(){
 	var nameJ =  /^.{1,30}$/;
 	var phone = document.getElementById("phone");
 	var phoneJ =  /^.{1,30}$/;
-	// 성별 각각 라디오체크 유무 확인
-/*	var female = document.getElementById("female");
-	var male = document.getElementById("male");*/
+
 	// 청구정보
-	var address = document.getElementById("addr");
+	var address = document.getElementById("sample6_address");
 	var addressJ =  /^.{1,30}$/;
-	var detailAddr = document.getElementById("detailAddr");
+	var detailAddr = document.getElementById("sample6_detailAddress");
 	var detailAddrJ =  /^.{1,30}$/;
-	var postNumber  = document.getElementById("postNum");
+	var postNumber  = document.getElementById("sample6_postcode");
 	var postNumberJ =  /^.{1,30}$/;
 	// 약관동의 체크박스 필수
 	var box1 = document.getElementById("required1");
@@ -409,10 +407,6 @@ function form_submit(){
 		alert("연락처는 필수입력 사항입니다.");
 		phone.focus();
 		return false;							
-	/*}else if(!male.checked && female.checked){
-		alert("성별 체크해주세요.");
-		female.focus();
-		return false;*/
 	}else if(!addressJ.test(address.value)){
 		alert("주소는 필수입력 사항입니다.");
 		address.focus();

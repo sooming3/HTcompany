@@ -8,7 +8,7 @@
   	<insert id="memreg">
 		insert into Viviana_member 
 		values (#{User_id},#{User_password},#{User_name},#{User_phone},
-		#{User_gender},#{User_birth},#{User_interest},#{User_addr1},#{User_addr2},#{User_addr3},
+		#{User_gender},#{User_birth},#{User_interest},#{postnum},#{User_addr1},#{User_addr2},#{User_addr3},
 		#{User_marketing_agree}, now());  	
   	</insert>
   	
