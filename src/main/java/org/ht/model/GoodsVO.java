@@ -2,22 +2,22 @@ package org.ht.model;
 
 public class GoodsVO { 
 	
-	private int g_num;
+	private String g_num;
 	private String g_name;
 	private String g_kind;
-	private int g_price;
-	private int g_color;
-	private int g_size;
+	private String g_price;
+	private String g_color;
+	private String g_size;
 	private String g_content;
 	private String g_image;
 	private String g_useyn;
 	private String g_regdate;
 	
 	
-	public int getG_num() {
+	public String getG_num() {
 		return g_num;
 	}
-	public void setG_num(int g_num) {
+	public void setG_num(String g_num) {
 		this.g_num = g_num;
 	}
 	public String getG_name() {
@@ -32,22 +32,22 @@ public class GoodsVO {
 	public void setG_kind(String g_kind) {
 		this.g_kind = g_kind;
 	}
-	public int getG_price() {
+	public String getG_price() {
 		return g_price;
 	}
-	public void setG_price(int g_price) {
+	public void setG_price(String g_price) {
 		this.g_price = g_price;
 	}
-	public int getG_color() {
+	public String getG_color() {
 		return g_color;
 	}
-	public void setG_color(int g_color) {
+	public void setG_color(String g_color) {
 		this.g_color = g_color;
 	}
-	public int getG_size() {
+	public String getG_size() {
 		return g_size;
 	}
-	public void setG_size(int g_size) {
+	public void setG_size(String g_size) {
 		this.g_size = g_size;
 	}
 	public String getG_content() {
