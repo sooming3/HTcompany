@@ -55,9 +55,9 @@ public class HomeController {
 	}
 	
 	// 상세페이지로 이동하기
-	@RequestMapping(value="/product", method = RequestMethod.GET)
+	@RequestMapping(value="/product_r", method = RequestMethod.GET)
 	public String product() {
-	return "/product";
+	return "/product_r";
 	}
 	
 	// 상세페이지로 이동하기
