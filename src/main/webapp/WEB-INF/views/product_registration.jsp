@@ -15,6 +15,12 @@
 	<input type="text" id="g_name" name="g_name">
 	상품이미지
 	<input type="text" id="g_image" name="g_image">
+	상품이미지1
+	<input type="text" id="g_image1" name="g_image1">
+	상품이미지2
+	<input type="text" id="g_image2" name="g_image2">
+	상품이미지3
+	<input type="text" id="g_image3" name="g_image3">
 	상품설명
 	<input type="text" id="g_content" name="g_content">
 	상품종류

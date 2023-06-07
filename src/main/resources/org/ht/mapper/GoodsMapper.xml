@@ -12,4 +12,10 @@
 	  VALUES (#{g_num}, #{g_name}, #{g_kind}, #{g_price}, #{g_content}, #{g_image}, #{g_color}, #{g_size}, #{g_useyn}, now())
 	</insert>
 	
+	<!-- insert for images table -->
+	<insert id="images">
+	  INSERT INTO Images(g_num, g_image1, g_image2, g_image3)
+	  VALUES (#{g_num}, #{g_image1}, #{g_image2}, #{g_image3})
+	</insert>
+	
   </mapper>
