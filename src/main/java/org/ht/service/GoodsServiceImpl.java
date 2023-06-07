@@ -11,7 +11,7 @@ public class GoodsServiceImpl implements GoodsService {
 	@Autowired
 	GoodsMapper gm;
 	
-	//product_registration 상품 등록 insert
+	//product_registration 상품 등록 insert 
 	public void product(GoodsVO goods) {
 		gm.product(goods);
 	}

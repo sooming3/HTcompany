@@ -15,13 +15,13 @@ public class GoodsController {
 	@Autowired
 	GoodsService gs;
 	
-	//product_registration GET
+	//product_registration GET 
 	@RequestMapping(value="/product", method = RequestMethod.GET)
 	public String product_registration() {
 	return "product_registration";
 	}
 	
-	//product_registration POST -> 상품등록 insert
+	//product_registration POST -> 상품등록 insert 
 	@RequestMapping(value = "/product", method = RequestMethod.POST)
 	public String productIn(GoodsVO goods) {
 		System.out.println(goods);

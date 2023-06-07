@@ -13,7 +13,6 @@ public class GoodsVO {
 	private String g_useyn;
 	private String g_regdate;
 	
-	
 	public String getG_num() {
 		return g_num;
 	}
