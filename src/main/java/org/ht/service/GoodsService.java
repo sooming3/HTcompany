@@ -18,5 +18,7 @@ public interface GoodsService {
 	public ArrayList<GoodsVO> list(CriteriaVO cri);
 	
 	public int total(CriteriaVO cri);
+	
+	public GoodsVO goods_detail(String g_num);
 
 }

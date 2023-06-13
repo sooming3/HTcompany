@@ -51,5 +51,15 @@
 
 			</if>
   		</select>
+  		
+  		<select id="goods_detail" resultType="org.ht.model.GoodsVO">
+  			select * from Goods
+  			where g_num=#{g_num}
+  		</select>
+  		
+<!--   		<select id="goods_detail" resultType="org.ht.model.GoodsVO">
+  			select * from Goods
+  			INNER JOIN Images ON Goods.g_num = Images.g_num;
+  		</select> -->
 	
   </mapper>

@@ -36,11 +36,12 @@
 	<!-- for문 시작 -->
 	<c:forEach items="${list}" var="Goods_List">
 		<div>
-		<span>${Goods_List.g_image}</span>
+		<span><a href="goods_detail?g_num=${Goods_List.g_num}">${Goods_List.g_image}</a></span>
 		<span>${Goods_List.g_name}</span>
 		<span>${Goods_List.g_price}</span>
 		<span>${Goods_List.g_color}</span>
 		</div>
+		<br>
 	</c:forEach>
 	<!-- for문 끝 -->
 	

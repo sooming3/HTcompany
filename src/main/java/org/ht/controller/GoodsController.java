@@ -60,6 +60,13 @@ public class GoodsController {
 		return "goods_list";
 	}
 	
+	@RequestMapping(value = "/goods_detail", method = RequestMethod.GET)
+	public String goods_detail (String g_num, Model model) {
+		model.addAttribute("goods_detail", gs.goods_detail(g_num));
+		gs.goods_detail(g_num);
+		return "goods_detail";
+	}
+	
 	
 /*	@RequestMapping(value = "/goodslist", method = RequestMethod.GET)
 	// 게시판 목록 리스트

@@ -9,6 +9,7 @@ import org.ht.model.GoodsVO;
 import org.ht.model.ImagesVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @Service
@@ -78,6 +79,10 @@ public class GoodsServiceImpl implements GoodsService {
 	
 	public int total(CriteriaVO cri) {
 		return gm.total(cri);
+	}
+	
+	public GoodsVO goods_detail(String g_num) {
+		return gm.goods_detail(g_num);
 	}
 
 }
