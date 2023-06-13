@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,14 +32,18 @@
 		</li>
 	</ul> -->
 	
+	
 	<!-- for문 시작 -->
-	<c:forEach items="${getGoodsList}" var="getGoodsList">
-		<div>이미지자리</div>
-		<div>상품명</div>
-		<div>상품가격</div>
-		<div>상품컬러</div>
+	<c:forEach items="${list}" var="Goods_List">
+		<div>
+		<span>${Goods_List.g_image}</span>
+		<span>${Goods_List.g_name}</span>
+		<span>${Goods_List.g_price}</span>
+		<span>${Goods_List.g_color}</span>
+		</div>
 	</c:forEach>
 	<!-- for문 끝 -->
+	
 	
 	
 	

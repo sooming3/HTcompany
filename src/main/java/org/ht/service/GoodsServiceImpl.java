@@ -1,11 +1,15 @@
 package org.ht.service;
 
+import java.util.ArrayList;
+
 import org.ht.mapper.GoodsMapper;
 import org.ht.mapper.ImagesMapper;
+import org.ht.model.CriteriaVO;
 import org.ht.model.GoodsVO;
 import org.ht.model.ImagesVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 @Service
 public class GoodsServiceImpl implements GoodsService {
@@ -67,5 +71,13 @@ public class GoodsServiceImpl implements GoodsService {
         gm.images(images);
     
     }
+    
+	public ArrayList<GoodsVO> list(CriteriaVO cri) {
+		return gm.list(cri);
+	}
+	
+	public int total(CriteriaVO cri) {
+		return gm.total(cri);
+	}
 
 }

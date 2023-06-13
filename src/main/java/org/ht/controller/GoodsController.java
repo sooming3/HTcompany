@@ -2,11 +2,14 @@ package org.ht.controller;
 
 import javax.servlet.http.HttpSession;
 
+import org.ht.model.CriteriaVO;
 import org.ht.model.GoodsVO;
 import org.ht.model.ImagesVO;
+import org.ht.model.PageVO;
 import org.ht.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -48,10 +51,13 @@ public class GoodsController {
 	
 	
 	// 상품 리스트로 이동하기
-	@RequestMapping(value="/goodslist", method = RequestMethod.GET)
-	public String goodsList() {
-	System.out.println("goodslist");
-	return "goods_list";
+	@RequestMapping(value="/goods_list", method = RequestMethod.GET)
+	public String list (Model model, CriteriaVO cri) {
+		model.addAttribute("list", gs.list(cri));
+		int total=gs.total(cri);
+		model.addAttribute("paging", new PageVO(cri, total));
+		System.out.println("goodslist");
+		return "goods_list";
 	}
 	
 	

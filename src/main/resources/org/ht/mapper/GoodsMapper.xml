@@ -18,4 +18,38 @@
 	  VALUES (#{g_num}, #{g_image1}, #{g_image2}, #{g_image3})
 	</insert>
 	
+		<select id="list" resultType="org.ht.model.GoodsVO">
+				select *
+				from Goods
+				<if test="keyword != null">
+					<choose>
+						<otherwise>
+						where g_name like concat('%',#{keyword},'%')
+						OR  g_price like concat('%',#{keyword},'%')
+						OR  g_image like concat('%',#{keyword},'%')
+						OR  g_color like concat('%',#{keyword},'%')
+						</otherwise>
+					</choose>
+			    </if>
+			    order by g_name desc
+  		</select>
+  		
+  		<select id="total" resultType="int">
+  			select count(*) from Goods
+  			<if test="keyword != null">
+						
+			<choose>
+				<when test="type=='T'.toString()">
+					 where g_name like concat('%',#{keyword},'%')
+				</when>
+				<otherwise>
+					where g_name like concat('%',#{keyword},'%')
+			      <!-- OR  product_id like concat('%',#{keyword},'%') -->
+				</otherwise>
+			
+			</choose>
+
+			</if>
+  		</select>
+	
   </mapper>
