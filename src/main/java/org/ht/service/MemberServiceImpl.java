@@ -19,6 +19,13 @@ public class MemberServiceImpl implements MemberService {
 	public MemberVO login(MemberVO member) {
 		return mm.login(member);
 	}
+	
+	//아이디 중복체크
+	public boolean idChk(MemberVO member) {
+        // Call the mapper method to check if the ID exists in the database
+        boolean response = mm.idChk(member);
 
+        return response;
+    }
 }
 

@@ -21,7 +21,7 @@
               <input type="email" class="form-control" id="registration-form-email" name="User_id" onblur="emailCheck()"/><br>
               <span class="hiddenText" id="spanEmail"></span>
               </label>
-              <button type="button" class="join_checkbtn" id="dchk" onclick="id_check()">중복확인</button>
+              <button type="button" class="join_checkbtn" id="dchk" onclick="checkDuplicateId()">중복확인</button>
               <button type="button" class="join_checkbtn" id="" onclick="">이메일 인증</button>
        </div>
        <div class="form-group required" class="showPW">

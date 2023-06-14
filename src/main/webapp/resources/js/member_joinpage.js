@@ -47,6 +47,118 @@ function emailCheck(){
 	};	
 }
 
+/*
+//이메일 중복 확인 함수
+function checkEmailDuplicate(email) {
+  // Ajax 요청 설정
+  $.ajax({
+    url: "/check_email_duplicate", // 중복 확인을 처리하는 서버 엔드포인트 URL로 변경해야 합니다.
+    method: "POST",
+    data: { email: email }, // 서버에 전달할 데이터 (이메일)
+    success: function(response) {
+      // 중복 확인 결과를 처리하는 로직을 여기에 작성합니다.
+      if (response.duplicate) {
+        // 이메일이 중복되는 경우
+        $("#spanEmail").text("중복된 이메일입니다.").show();
+      } else {
+        // 이메일이 중복되지 않는 경우
+        $("#spanEmail").text("사용 가능한 이메일입니다.").show();
+      }
+    },
+    error: function(xhr, status, error) {
+      // 에러 처리 로직을 여기에 작성합니다.
+      console.error("이메일 중복 확인 요청 실패:", error);
+    }
+  });
+}
+
+// 중복 확인 버튼 클릭 시 이메일 중복 확인
+function id_check() {
+  var email = $("#registration-form-email").val();
+  checkEmailDuplicate(email);
+}
+*/
+
+////https://melonpeach.tistory.com/45
+
+//https://velog.io/@vipstar-_-/Spring-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%95%84%EC%9D%B4%EB%94%94-%EC%A4%91%EB%B3%B5%EC%B2%B4%ED%81%AC-ajax
+//아이디 중복체크
+//중복확인 버튼 클릭 시 실행되는 함수
+function checkDuplicateId() {
+    var userId = $("#registration-form-email").val(); // 입력한 ID 값 가져오기
+
+    // AJAX 요청으로 서버에 중복 확인 요청 보내기
+    $.ajax({
+        url: "/checkDuplicateId", // 중복 확인을 수행하는 서버의 URL
+        type: "POST",
+        data: { "userId": userId }, // 서버에 전달할 데이터
+        success: function(response) {
+            if (response === true) {
+                // 아이디가 이미 사용 중인 경우
+                $("#spanEmail").text("아이디 사용불가"); // 메시지 표시
+                $("#spanEmail").addClass("showText"); // 메시지를 보이도록 클래스 추가
+            } else {
+                // 아이디가 사용 가능한 경우
+                $("#spanEmail").text(""); // 메시지 초기화
+                $("#spanEmail").removeClass("showText"); // 메시지 숨기도록 클래스 제거
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log("Error occurred while checking duplicate ID: " + error);
+        }
+    });
+}
+
+
+
+//아이디 체크여부 확인 (아이디 중복일 경우 = 0 , 중복이 아닐경우 = 1 )
+/*var idck = 0;
+$(function() {
+    //idck 버튼을 클릭했을 때 
+    $("#idck").click(function() {
+        
+        //userid 를 param.
+        var userid =  $("#userid").val(); 
+        
+        $.ajax({
+            async: true,
+            type : 'POST',
+            data : userid,
+            url : "idcheck.do",
+            dataType : "json",
+            contentType: "application/json; charset=UTF-8",
+            success : function(data) {
+                if (data.cnt > 0) {
+                    
+                    alert("아이디가 존재합니다. 다른 아이디를 입력해주세요.");
+                    //아이디가 존제할 경우 빨강으로 , 아니면 파랑으로 처리하는 디자인
+                    $("#divInputId").addClass("has-error")
+                    $("#divInputId").removeClass("has-success")
+                    $("#userid").focus();
+                    
+                
+                } else {
+                    alert("사용가능한 아이디입니다.");
+                    //아이디가 존재할 경우 빨강으로 , 아니면 파랑으로 처리하는 디자인
+                    $("#divInputId").addClass("has-success")
+                    $("#divInputId").removeClass("has-error")
+                    $("#userpwd").focus();
+                    //아이디가 중복하지 않으면  idck = 1 
+                    idck = 1;
+                    
+                }
+            },
+            error : function(error) {
+                
+                alert("error : " + error);
+            }
+        });
+    });
+});
+ */
+
+
+
 function passCheck(){
 	var password = document.getElementById("registration-form-password");
 	var passJ = /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;	//[!@#$%^&+=] : 키보드의 모든 특수문자

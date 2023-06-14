@@ -5,4 +5,5 @@ import org.ht.model.MemberVO;
 public interface MemberMapper {
 	public void memreg(MemberVO member);
 	public MemberVO login(MemberVO member);
+	public boolean idChk(MemberVO member);
 }
