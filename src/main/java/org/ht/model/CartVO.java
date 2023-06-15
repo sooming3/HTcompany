@@ -2,18 +2,21 @@ package org.ht.model;
 
 public class CartVO {
 	
-	private int c_num;
+	private String c_num;
 	private String c_id;
-	private int c_prodnum;
+	private String c_pronum;
+	private String c_name;
+	private String c_price;
+	private String c_color;
+	private String c_size;
 	private int c_quantity;
 	private String c_result;
 	private String c_indate;
-	 
 	
-	public int getC_num() {
+	public String getC_num() {
 		return c_num;
 	}
-	public void setC_num(int c_num) {
+	public void setC_num(String c_num) {
 		this.c_num = c_num;
 	}
 	public String getC_id() {
@@ -22,11 +25,35 @@ public class CartVO {
 	public void setC_id(String c_id) {
 		this.c_id = c_id;
 	}
-	public int getC_prodnum() {
-		return c_prodnum;
+	public String getC_pronum() {
+		return c_pronum;
 	}
-	public void setC_prodnum(int c_prodnum) {
-		this.c_prodnum = c_prodnum;
+	public void setC_pronum(String c_pronum) {
+		this.c_pronum = c_pronum;
+	}
+	public String getC_name() {
+		return c_name;
+	}
+	public void setC_name(String c_name) {
+		this.c_name = c_name;
+	}
+	public String getC_price() {
+		return c_price;
+	}
+	public void setC_price(String c_price) {
+		this.c_price = c_price;
+	}
+	public String getC_color() {
+		return c_color;
+	}
+	public void setC_color(String c_color) {
+		this.c_color = c_color;
+	}
+	public String getC_size() {
+		return c_size;
+	}
+	public void setC_size(String c_size) {
+		this.c_size = c_size;
 	}
 	public int getC_quantity() {
 		return c_quantity;
@@ -49,9 +76,11 @@ public class CartVO {
 	
 	@Override
 	public String toString() {
-		return "CartVO [c_num=" + c_num + ", c_id=" + c_id + ", c_prodnum=" + c_prodnum + ", c_quantity=" + c_quantity
+		return "CartVO [c_num=" + c_num + ", c_id=" + c_id + ", c_pronum=" + c_pronum + ", c_name=" + c_name
+				+ ", c_price=" + c_price + ", c_color=" + c_color + ", c_size=" + c_size + ", c_quantity=" + c_quantity
 				+ ", c_result=" + c_result + ", c_indate=" + c_indate + "]";
 	}
-	
+	 
+
 	
 }

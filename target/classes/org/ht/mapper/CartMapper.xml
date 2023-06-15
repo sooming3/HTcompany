@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="org.ht.mapper.CartMapper">
+	<select id="cartList" resultType="org.ht.model.CartVO">
+		select * from viviana.cart;
+	</select>
+  
+</mapper>

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ include file="viviana_header.jsp"%>
 
 <div id="cartPage_all">
@@ -18,7 +20,7 @@
 			<div class="sideMenu-goods-style" style="font-size: 12px;">스타일<span class="color-reference"># ‎723391 C9D00 9022</span></div>
 				<ul class="sideMenu-baglist-item-properties">
 					<li>
-					<span class="property-name">옵션</span>:
+					<span class="property-name">색상</span>:
 					<span class="property-value-style">화이트 레더</span>
 					</li>
 					<li>
@@ -66,7 +68,9 @@
 		<button onclick="removePopup()" class="button">취소</button>
 		</div>
 	</div>
-		
+	
+		<!-- 메인 장바구니 -->
+	<c:forEach var="list" items="${list}">
 		<div class="goods">
 			<img class="icon_remove" onclick="choicePopup()" src="resources/img/icon_remove.png">
 			<div class="product_img_div">
@@ -74,32 +78,37 @@
 			</div>
 
 			<div class="goods_option">
-		
 				<h3 class="item-title">
-					<a href="#">수민 찰떡 네크리스</a>
+					<a href="#">${list.c_name}</a>
 				</h3>
-				<div class="goods-style" style="font-size: 12px;">스타일<span class="color-reference"># ‎723391 C9D00 9022</span></div>
-					<ul class="baglist-item-properties">
-						<li>
-						<span class="property-name">옵션</span>:
-						<span class="property-value-style">화이트 레더</span>
-						</li>
-						<li>
-						<span class="property-name">사이즈</span>:
-						<span class="property-value-size">35.5 = 225 KR</span>
-						</li>
-					</ul>
-			
-				
-					<div class="shipping-info">
+				<div class="goods-style" style="font-size: 12px;">스타일
+					<span class="color-reference">${list.c_pronum}</span>
+				</div>
+				<ul class="baglist-item-properties">
+					<li>
+					<span class="property-name">색상</span>:
+					<span class="property-value-style">${list.c_color}</span>
+					</li>
+					<li>
+					<span class="property-name">사이즈</span>:
+					<span class="property-value-size">${list.c_size}</span>
+					</li>
+				</ul>
+				<div class="shipping-info">
+					<c:if test="${list.c_result == 'y'}">
 						<p class="stock_status"><b>재고 보유</b></p>
 						<div class="subtitle">1~3일 이내 발송 가능한 상품입니다.</div>
-					</div>
+					</c:if>
+					<c:if test="${list.c_result == 'n'}">
+						<p class="stock_status"><b>품절</b></p>
+						<div class="subtitle">현재 재고가 없습니다.</div>
+					</c:if>
+				</div>
 				
 				<div class="footer-item">
 					<div class="baglist-item-actions">
 						<div class="edit-action">
-							<button onclick="openPopup2()" type="button">수정</button>
+							<button onclick="openPopup2()" type="button">옵션 수정</button>
 							<button type="button" onclick="choicePopup()">삭제</button>
 							<button type="button">♡위시리스트 담기</button>
 						</div>
@@ -107,137 +116,25 @@
 				</div> 
 			</div>
 			<!-- 수량, 가격 부분 -->
-			
 			<div class="price-label">
 				<span class="baglist-item-price THREE">
-					<span>₩ <span class="onlyPrice">1220000</span></span>
+					<span>₩ <span class="onlyPrice">${list.c_price}</span></span>
 				</span>
 			</div>
 			<div class="quantity">
 				<div class="custom-select-parent " data-item-maxquantity="1">
 				<label class="quantity-label" for="qty-723391C9D009022">수량:</label>
 					<select class="numOption">
-						<option selected value="1" >1</option>
+						<option selected value="${list.c_quantity}">${list.c_quantity}</option>
+						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 					</select>
 				</div>
 			</div>
 		</div>
-		<div class="goods">
-			<img class="icon_remove" src="resources/img/icon_remove.png" onclick="choicePopup()">
-			<div class="product_img_div">
-				<img class="product_img" src="resources/img/neck1.jpg">
-			</div>
-
-			<div class="goods_option">
+	</c:forEach>
 		
-				<h3 class="item-title">
-					<a href="#">수민 찰떡 네크리스</a>
-				</h3>
-				<div class="goods-style" style="font-size: 12px;">스타일<span class="color-reference"># ‎723391 C9D00 9022</span></div>
-					<ul class="baglist-item-properties">
-						<li>
-						<span class="property-name">옵션</span>:
-						<span class="property-value-style">화이트 레더</span>
-						</li>
-						<li>
-						<span class="property-name">사이즈</span>:
-						<span class="property-value-size">35.5 = 225 KR</span>
-						</li>
-					</ul>
-			
-				
-					<div class="shipping-info">
-						<p class="stock_status"><b>재고 보유</b></p>
-						<div class="subtitle">1~3일 이내 발송 가능한 상품입니다.</div>
-					</div>
-				
-				<div class="footer-item">
-					<div class="baglist-item-actions">
-						<div class="edit-action">
-							<button type="button">수정</button>
-							<button type="button">삭제</button>
-							<button type="button">♡위시리스트 담기</button>
-						</div>
-					</div>
-				</div> 
-			</div>
-			<!-- 수량, 가격 부분 -->
-			
-			<div class="price-label">
-				<span class="baglist-item-price THREE">
-					<span>₩ <span>1220000</span></span>
-				</span>
-			</div>
-			<div class="quantity">
-				<div class="custom-select-parent " data-item-maxquantity="1">
-				<label class="quantity-label" for="qty-723391C9D009022">수량:</label>
-					<select name="" id="qty-723391C9D009022" class="custom-select custom-select-qty custom-quantity-select select2-hidden-accessible" data-index="0" aria-label="Quantity" data-custom-select-prefix="수량" tabindex="-1" aria-hidden="true">
-						<option selected="selected" value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-					</select>
-				</div>
-			</div>
-		</div>
-		<div class="goods">
-			<img class="icon_remove" src="resources/img/icon_remove.png" onclick="choicePopup()">
-			<div class="product_img_div">
-				<img class="product_img" src="resources/img/neck1.jpg">
-			</div>
-
-			<div class="goods_option">
-		
-				<h3 class="item-title">
-					<a href="#">수민 찰떡 네크리스</a>
-				</h3>
-				<div class="goods-style" style="font-size: 12px;">스타일<span class="color-reference"># ‎723391 C9D00 9022</span></div>
-					<ul class="baglist-item-properties">
-						<li>
-						<span class="property-name">옵션</span>:
-						<span class="property-value-style">화이트 레더</span>
-						</li>
-						<li>
-						<span class="property-name"></span>
-						<span class="property-value-size"></span>
-						</li>
-					</ul>
-			
-				
-					<div class="shipping-info">
-						<p class="stock_status"><b>재고 보유</b></p>
-						<div class="subtitle">1~3일 이내 발송 가능한 상품입니다.</div>
-					</div>
-				
-				<div class="footer-item">
-					<div class="baglist-item-actions">
-						<div class="edit-action">
-							<button type="button">수정</button>
-							<button type="button">삭제</button>
-							<button type="button">♡위시리스트 담기</button>
-						</div>
-					</div>
-				</div> 
-			</div>
-			<!-- 수량, 가격 부분 -->
-			
-			<div class="price-label">
-				<span class="baglist-item-price THREE">
-					<span>₩ <span>1220000</span></span>
-				</span>
-			</div>
-			<div class="quantity">
-				<div class="custom-select-parent " data-item-maxquantity="1">
-				<label class="quantity-label" for="qty-723391C9D009022">수량:</label>
-					<select name="" id="qty-723391C9D009022" class="custom-select custom-select-qty custom-quantity-select select2-hidden-accessible" data-index="0" aria-label="Quantity" data-custom-select-prefix="수량" tabindex="-1" aria-hidden="true">
-						<option selected="selected" value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-					</select>
-				</div>
-			</div>
-		</div>
 <!-- 선택 삭제 팝업 -->	
 	<div id="choicePopup">
 		<div align="right"><img onclick="deletePopup()" class="iconX" src="resources/img/icons_x.png"></div>
@@ -326,7 +223,7 @@
 <div id="emptyPage" align="center">
 	<h2 style="margin: 40px 0px 30px 0px;">쇼핑백이 비어있습니다.</h2>
 	<p>내 계정에 로그인하면 이전에 고객님이 다른 기기에서 추가했던 상품을 볼 수 있습니다.</p>
-	<button class="button" style="width: 200px; margin: 20px 0px 50px 0px;">로그인</button>
+	<button onclick="location.href='/login';" class="button" style="width: 200px; margin: 20px 0px 50px 0px;">로그인</button>
 	<p>비비아나의 다채로운 매력에 빠져보세요!</p>
 	<img id="img1" src="resources/img/neck1.jpg"><img id="img2" src="resources/img/ear.jpg"><img id="img3" src="resources/img/ring.jpg">
 
