@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form method="post">
+	<!-- <form method="post"> -->
 
 		<div>
 		<span>${goods_detail.g_num}</span>
@@ -26,7 +26,7 @@
 		<span>${goods_detail.g_regdate}</span>
 		</div>
 
-	</form>
+	<!-- </form> -->
 
 </body>
 </html>

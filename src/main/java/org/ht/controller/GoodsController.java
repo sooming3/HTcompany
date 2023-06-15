@@ -36,7 +36,7 @@ public class GoodsController {
 	}*/
 	
 	//product_registration POST -> 상품등록 insert 
-	@RequestMapping(value = "/product", method = RequestMethod.POST)
+/*	@RequestMapping(value = "/product", method = RequestMethod.POST)
 	public String productIn(GoodsVO goods, 
 			@RequestParam("g_image1") String g_image1,
 			@RequestParam("g_image2") String g_image2,
@@ -47,7 +47,60 @@ public class GoodsController {
 		System.out.println(g_image3);
 		gs.product(goods,g_image1, g_image2, g_image3);
 		return "product_registration";
+	}*/
+	
+	@RequestMapping(value = "/product", method = RequestMethod.POST)
+	public String productIn(GoodsVO goods, 
+	        @RequestParam("g_image1") String g_image1,
+	        @RequestParam("g_image2") String g_image2,
+	        @RequestParam("g_image3") String g_image3,
+	        @RequestParam("g_size") String[] g_sizes,
+	        @RequestParam("g_color") String[] g_colors) {
+	    // 상품 정보 처리
+	    System.out.println(goods);
+	    System.out.println(g_image1);
+	    System.out.println(g_image2);
+	    System.out.println(g_image3);
+
+	    // 사이즈 값 처리
+	    for (String size : g_sizes) {
+	        if (size != null && !size.trim().isEmpty()) {
+	            try {
+	                int sizeValue = Integer.parseInt(size);
+	                System.out.println("Size: " + sizeValue);
+	                // 여기에 유효한 사이즈 값을 처리하는 로직을 추가하세요
+	            } catch (NumberFormatException e) {
+	                System.out.println("Invalid size: " + size);
+	                // 유효하지 않은 사이즈 값에 대한 예외 처리를 수행하세요
+	            }
+	        }
+	    }
+
+	    // 컬러 값 처리
+	    for (String color : g_colors) {
+	        if (color != null && !color.trim().isEmpty()) {
+	            try {
+	                int colorValue = Integer.parseInt(color);
+	                System.out.println("Color: " + colorValue);
+	                // 여기에 유효한 컬러 값을 처리하는 로직을 추가하세요
+	            } catch (NumberFormatException e) {
+	                System.out.println("Invalid color: " + color);
+	                // 유효하지 않은 컬러 값에 대한 예외 처리를 수행하세요
+	            }
+	        }
+	    }
+
+	    // 기존의 코드와 동일하게 처리
+	    gs.product(goods, g_image1, g_image2, g_image3);
+	    return "product_registration";
 	}
+
+
+
+
+
+
+
 	
 	
 	// 상품 리스트로 이동하기
