@@ -110,7 +110,7 @@
 						<div class="edit-action">
 							<button onclick="openPopup2()" type="button">옵션 수정</button>
 							<button type="button" onclick="choicePopup()">삭제</button>
-							<button type="button">♡위시리스트 담기</button>
+		 					<button type="button">♡위시리스트 담기</button>
 						</div>
 					</div>
 				</div> 
