@@ -92,7 +92,7 @@ public class HomeController {
 	
 /*	// 카트로 이동하기
 	@RequestMapping(value="/cart", method = RequestMethod.GET)
-	public String cart() { 
+	public String cart() {  
 	return "cartPage";
 	}*/
 

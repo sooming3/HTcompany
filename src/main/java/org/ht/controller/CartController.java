@@ -20,6 +20,6 @@ public class CartController {
 		cs.cartList(cart);
 		model.addAttribute("list", cs.cartList(cart));
 		System.out.println(cs.cartList(cart));
-		return "cartPage"; 
+		return "cartPage";  
 	}
 }

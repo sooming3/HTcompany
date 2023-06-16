@@ -119,7 +119,7 @@
 			<div class="price-label">
 				<span class="baglist-item-price THREE">
 					<span>₩ <span class="onlyPrice">${list.c_price}</span></span>
-				</span>
+				</span> 
 			</div>
 			<div class="quantity">
 				<div class="custom-select-parent " data-item-maxquantity="1">
