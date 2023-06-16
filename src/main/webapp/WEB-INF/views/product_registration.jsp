@@ -23,32 +23,42 @@
 	<input type="text" id="g_image3" name="g_image3">
 	상품설명
 	<input type="text" id="g_content" name="g_content">
-	
-<!-- 	상품종류
+ 	상품종류
 	<input type="text" id="g_kind" name="g_kind">
-	상품사이즈
+<!-- 	상품사이즈
 	<input type="text" id="g_size" name="g_size">
 	상품컬러
 	<input type="text" id="g_color" name="g_color"> -->
 	
-    상품종류
+	<div id="sizes-container">
+	<div class="input-row">
+	
+		상품사이즈
+		<input type="text" id="g_size" name="g_size[]" class="size-input">
+		상품컬러
+		<input type="text" id="g_color" name="g_color[]" class="color-input">
+	
+	</div>
+	</div>
+	
+<!--     상품종류
     <select id="g_kind" name="g_kind" onchange="updateOptions()">
         <option value="선택">선택</option>
         <option value="쥬얼리">쥬얼리</option>
         <option value="워치">워치</option>
         <option value="핸드백">핸드백</option>
-        <!-- 다른 상품종류 옵션들 추가 -->
+        다른 상품종류 옵션들 추가
     </select>
 
     색상
     <select id="g_color" name="g_color">
-        <!-- 초기 색상 옵션들 -->
+        초기 색상 옵션들
     </select>
 
     사이즈
     <select id="g_size" name="g_size">
-        <!-- 초기 사이즈 옵션들 -->
-    </select>
+        초기 사이즈 옵션들
+    </select> -->
 	
 	상품가격
 	<input type="text" id="g_price" name="g_price">
@@ -57,11 +67,38 @@
 	상품등록날짜
 	<input type="hidden" id="g_regdate" name="g_regdate">
 	
+	<button type="button" id="add-field-btn" class="button">+</button>
 	<button type="submit" class="button">확인</button>	
 </form>
 
 <script>
-    function updateOptions() {
+document.getElementById("add-field-btn").addEventListener("click", function() {
+	var sizesContainer = document.getElementById("sizes-container");
+	
+	var inputRow = document.createElement("div");
+	inputRow.className = "input-row";
+	
+	var sizeInput = document.createElement("input");
+	sizeInput.type = "text";
+	sizeInput.name = "g_size[]";
+	sizeInput.className = "size-input";
+	
+	var colorInput = document.createElement("input");
+	colorInput.type = "text";
+	colorInput.name = "g_color[]";
+	colorInput.className = "color-input";
+	
+	inputRow.appendChild(document.createTextNode("상품사이즈"));
+	inputRow.appendChild(sizeInput);
+	inputRow.appendChild(document.createTextNode("상품컬러"));
+	inputRow.appendChild(colorInput);
+	
+	sizesContainer.appendChild(inputRow);
+});
+</script>
+
+<script>
+/*     function updateOptions() {
         var g_kind = document.getElementById("g_kind").value;
         var g_color = document.getElementById("g_color");
         var g_size = document.getElementById("g_size");
@@ -113,7 +150,7 @@
                 g_size.add(option);
             }
         }
-    }
+    } */
 </script>
 
 </body>
