@@ -115,7 +115,7 @@
 					</div>
 				</div> 
 			</div>
-			<!-- 수량, 가격 부분 -->
+			<!-- 수량, 가격 부분 --> 
 			<div class="price-label">
 				<span class="baglist-item-price THREE">
 					<span>₩ <span class="onlyPrice">${list.c_price}</span></span>

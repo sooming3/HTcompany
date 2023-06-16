@@ -7,6 +7,6 @@
 <mapper namespace="org.ht.mapper.CartMapper">
 	<select id="cartList" resultType="org.ht.model.CartVO">
 		select * from viviana.cart;
-	</select>
+	</select> 
   
 </mapper>

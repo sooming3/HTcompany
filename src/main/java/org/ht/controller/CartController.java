@@ -13,13 +13,13 @@ public class CartController {
 
 	// 비즈니스 모델을 컨트롤러에 연결하기
 	@Autowired
-	CartService cs;
+	CartService cs; 
 		
 	@RequestMapping(value = "/cart", method = RequestMethod.GET)
 	public String cartList(Model model, CartVO cart) {
 		cs.cartList(cart);
 		model.addAttribute("list", cs.cartList(cart));
 		System.out.println(cs.cartList(cart));
-		return "cartPage";
+		return "cartPage"; 
 	}
 }

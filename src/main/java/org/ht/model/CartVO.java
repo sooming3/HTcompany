@@ -9,7 +9,7 @@ public class CartVO {
 	private String c_price;
 	private String c_color;
 	private String c_size;
-	private int c_quantity;
+	private int c_quantity; 
 	private String c_result;
 	private String c_indate;
 	
