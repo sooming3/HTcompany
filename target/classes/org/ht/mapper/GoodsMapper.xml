@@ -13,10 +13,10 @@
 	</insert> -->
 	
 	<!-- insert for images table -->
-<!-- 	<insert id="images">
+	<insert id="images">
 	  INSERT INTO Images(g_num, g_image1, g_image2, g_image3)
 	  VALUES (#{g_num}, #{g_image1}, #{g_image2}, #{g_image3})
-	</insert> -->
+	</insert> 
 	
 	    <!-- 상품 등록 -->
     <insert id="product">
@@ -24,14 +24,14 @@
         VALUES (#{g_num}, #{g_name}, #{g_kind}, #{g_price}, #{g_content}, #{g_image}, #{g_useyn}, now())
     </insert>
 
-    <!-- 이미지 등록 -->
+<!--     이미지 등록
     <insert id="images">
         INSERT INTO Images(g_num, g_image1, g_image2, g_image3)
         VALUES (#{g_num}, #{g_image1}, #{g_image2}, #{g_image3})
-    </insert>
+    </insert> -->
 
     <!-- 사이즈 등록 -->
-    <insert id="sizes" parameterType="java.util.List">
+<!--     <insert id="sizes" parameterType="java.util.List">
         INSERT INTO Sizes(g_num, g_size)
         VALUES
         <foreach item="size" collection="list" separator=",">
@@ -39,14 +39,14 @@
         </foreach>
     </insert>
 
-    <!-- 컬러 등록 -->
+    컬러 등록
     <insert id="colors" parameterType="java.util.List">
         INSERT INTO Colors(g_num, g_color)
         VALUES
         <foreach item="color" collection="list" separator=",">
             (#{g_num}, #{color})
         </foreach>
-    </insert>
+    </insert> -->
 	
 		<select id="list" resultType="org.ht.model.GoodsVO">
 				select *

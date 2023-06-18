@@ -18,8 +18,17 @@ public class GoodsServiceImpl implements GoodsService {
 	@Autowired
 	GoodsMapper gm;
 	
-/*	@Autowired
-	ImagesMapper im;*/
+	@Autowired
+	ImagesMapper im;
+	
+	public void product(GoodsVO goods) {
+		gm.product(goods);
+	}
+	
+	public void images(ImagesVO img) {
+		gm.images(img);
+	}
+	
 	
 	
 /*	//product_registration 상품 등록 insert 
@@ -58,7 +67,7 @@ public class GoodsServiceImpl implements GoodsService {
 	}*/
 	
     // product_registration 상품 등록 insert
-    public void product(GoodsVO goods, String g_image1, String g_image2, String g_image3) {
+/*    public void product(GoodsVO goods, String g_image1, String g_image2, String g_image3) {
         gm.product(goods);
         
         // images 테이블에 INSERT 작업을 위한 ImagesVO 객체 생성 및 데이터 설정
@@ -71,7 +80,7 @@ public class GoodsServiceImpl implements GoodsService {
         // images 테이블에 데이터 INSERT
         gm.images(images);
     
-    }
+    }*/
     
 	public ArrayList<GoodsVO> list(CriteriaVO cri) {
 		return gm.list(cri);

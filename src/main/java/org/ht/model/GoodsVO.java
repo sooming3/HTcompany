@@ -1,4 +1,4 @@
-/*package org.ht.model;
+package org.ht.model;
 
 public class GoodsVO { 
 	
@@ -12,6 +12,8 @@ public class GoodsVO {
 	private String g_image;
 	private String g_useyn;
 	private String g_regdate;
+	
+	private ImagesVO images; // ImagesVO 모델 추가
 	
 	public String getG_num() {
 		return g_num;
@@ -74,17 +76,24 @@ public class GoodsVO {
 		this.g_regdate = g_regdate;
 	}
 	
+	public ImagesVO getImages() {
+		return images;
+	}
+	
+	public void setImages(ImagesVO images) {
+		this.images = images;
+	}
+	
 	@Override
 	public String toString() {
 		return "GoodsVO [g_num=" + g_num + ", g_name=" + g_name + ", g_kind=" + g_kind + ", g_price=" + g_price
 				+ ", g_color=" + g_color + ", g_size=" + g_size + ", g_content=" + g_content + ", g_image=" + g_image
-				+ ", g_useyn=" + g_useyn + ", g_regdate=" + g_regdate + "]";
+				+ ", g_useyn=" + g_useyn + ", g_regdate=" + g_regdate + ", images=" + images + "]";
 	}
-	
-	
+
 }
-*/
-package org.ht.model;
+
+/*package org.ht.model;
 
 import java.util.List;
 
@@ -169,3 +178,4 @@ public class GoodsVO {
 				+ ", g_image=" + g_image + ", g_useyn=" + g_useyn + ", g_regdate=" + g_regdate + "]";
 	}
 }
+*/

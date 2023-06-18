@@ -27,13 +27,13 @@ public class GoodsController {
 	}
 	
 	//product_registration POST -> 상품등록 insert 
-/*	@RequestMapping(value = "/product", method = RequestMethod.POST)
+	@RequestMapping(value = "/product", method = RequestMethod.POST)
 	public String productIn(GoodsVO goods, ImagesVO img) {
 		System.out.println(goods);
 		gs.product(goods);
 		gs.images(img);
 		return "product_registration";
-	}*/
+	}
 	
 	//product_registration POST -> 상품등록 insert 
 /*	@RequestMapping(value = "/product", method = RequestMethod.POST)
@@ -49,7 +49,7 @@ public class GoodsController {
 		return "product_registration";
 	}*/
 	
-	@RequestMapping(value = "/product", method = RequestMethod.POST)
+/*	@RequestMapping(value = "/product", method = RequestMethod.POST)
 	public String productIn(GoodsVO goods, 
 	        @RequestParam("g_image1") String g_image1,
 	        @RequestParam("g_image2") String g_image2,
@@ -93,7 +93,7 @@ public class GoodsController {
 	    // 기존의 코드와 동일하게 처리
 	    gs.product(goods, g_image1, g_image2, g_image3);
 	    return "product_registration";
-	}
+	}*/
 
 
 

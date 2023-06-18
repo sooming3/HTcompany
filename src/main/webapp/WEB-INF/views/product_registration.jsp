@@ -25,21 +25,21 @@
 	<input type="text" id="g_content" name="g_content">
  	상품종류
 	<input type="text" id="g_kind" name="g_kind">
-<!-- 	상품사이즈
+ 	상품사이즈
 	<input type="text" id="g_size" name="g_size">
 	상품컬러
-	<input type="text" id="g_color" name="g_color"> -->
+	<input type="text" id="g_color" name="g_color">
 	
-	<div id="sizes-container">
+<!-- 	<div id="sizes-container">
 	<div class="input-row">
 	
-		상품사이즈
+ 		상품사이즈
 		<input type="text" id="g_size" name="g_size[]" class="size-input">
 		상품컬러
 		<input type="text" id="g_color" name="g_color[]" class="color-input">
 	
 	</div>
-	</div>
+	</div> -->
 	
 <!--     상품종류
     <select id="g_kind" name="g_kind" onchange="updateOptions()">
@@ -67,12 +67,12 @@
 	상품등록날짜
 	<input type="hidden" id="g_regdate" name="g_regdate">
 	
-	<button type="button" id="add-field-btn" class="button">+</button>
+	<!-- <button type="button" id="add-field-btn" class="button">+</button> -->
 	<button type="submit" class="button">확인</button>	
 </form>
 
 <script>
-document.getElementById("add-field-btn").addEventListener("click", function() {
+/* document.getElementById("add-field-btn").addEventListener("click", function() {
 	var sizesContainer = document.getElementById("sizes-container");
 	
 	var inputRow = document.createElement("div");
@@ -94,7 +94,7 @@ document.getElementById("add-field-btn").addEventListener("click", function() {
 	inputRow.appendChild(colorInput);
 	
 	sizesContainer.appendChild(inputRow);
-});
+}); */
 </script>
 
 <script>
