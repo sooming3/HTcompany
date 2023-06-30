@@ -25,11 +25,14 @@ function emailCheck(){
 	var email = document.getElementById("registration-form-email");
 	//var mailJ = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;	//{2,3}:2글자 or 3글자(com / kr)
 	var mailJ = /^[A-Za-z0-9_]+[A-Za-z0-9]*[@]{1}[A-Za-z0-9]+[A-Za-z0-9]*[.]{1}[A-Za-z]{2,3}$/i;
+	var emailSpan = document.getElementById("spanEmail");
+	
 	// 이메일 공백시 
 	if(email.value == ""){
 		document.getElementById("spanEmail").innerHTML = "이메일을 입력해주세요.";
-		document.getElementById("spanEmail").style.color = "red";
+		emailSpan.style.color = "red";
 		email.focus();
+		emailSpan.style.visibility="visible";
 		return false;
 	};
 	
@@ -37,47 +40,19 @@ function emailCheck(){
 	if(mailJ.test(email.value)){
 		//값이 true면 문장 실행
 		document.getElementById("spanEmail").innerHTML = "이메일 확인되었습니다.";
-		document.getElementById("spanEmail").style.color = "green";
+		emailSpan.style.color = "green";
+		emailSpan.style.visibility="visible";
 		return true;
 	}else{ // false면 문장 실행
 		document.getElementById("spanEmail").innerHTML="올바른 이메일 형태로 입력해주세요.";
-		document.getElementById("spanEmail").style.color ="red";
+		emailSpan.style.color ="red";
 		email.focus();
+		emailSpan.style.visibility="visible";
 		return false;
 	};	
 }
 
-/*
-//이메일 중복 확인 함수
-function checkEmailDuplicate(email) {
-  // Ajax 요청 설정
-  $.ajax({
-    url: "/check_email_duplicate", // 중복 확인을 처리하는 서버 엔드포인트 URL로 변경해야 합니다.
-    method: "POST",
-    data: { email: email }, // 서버에 전달할 데이터 (이메일)
-    success: function(response) {
-      // 중복 확인 결과를 처리하는 로직을 여기에 작성합니다.
-      if (response.duplicate) {
-        // 이메일이 중복되는 경우
-        $("#spanEmail").text("중복된 이메일입니다.").show();
-      } else {
-        // 이메일이 중복되지 않는 경우
-        $("#spanEmail").text("사용 가능한 이메일입니다.").show();
-      }
-    },
-    error: function(xhr, status, error) {
-      // 에러 처리 로직을 여기에 작성합니다.
-      console.error("이메일 중복 확인 요청 실패:", error);
-    }
-  });
-}
 
-// 중복 확인 버튼 클릭 시 이메일 중복 확인
-function id_check() {
-  var email = $("#registration-form-email").val();
-  checkEmailDuplicate(email);
-}
-*/
 
 ////https://melonpeach.tistory.com/45
 
@@ -157,25 +132,42 @@ $(function() {
 });
  */
 
+// 비밀번호 키 아이콘
+function passwordVisibility() {
+    var passwordInput = document.getElementById("registration-form-password");
+    var keyIcon = document.getElementById("login_password");
+
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.className = "material-symbols-outlined"; // Change the icon to an eye with a slash
+    } else {
+      passwordInput.type = "password";
+      eyeIcon.className = "material-symbols-outlined"; // Change the icon back to a regular eye
+    }
+  }
 
 
 function passCheck(){
 	var password = document.getElementById("registration-form-password");
+	var passSpan = document.getElementById("passspan");
 	var passJ = /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;	//[!@#$%^&+=] : 키보드의 모든 특수문자
 	
 	if(password.value.length == 0){ // 공백 체크
 		document.getElementById("passspan").innerHTML="비밀번호를 입력해주세요.";
-		document.getElementById("passspan").style.color ="red";
+		passSpan.style.color ="red";
 		password.focus();
+		passSpan.style.visibility = "visible";
 		return false;
 	}else if(passJ.test(password.value)){	// 유효성 검증 완료 시 통과
 		document.getElementById("passspan").innerHTML="비밀번호 확인되었습니다.";
-		document.getElementById("passspan").style.color ="green";
+		passSpan.style.color ="green";
+		passSpan.style.visibility = "visible";
 		return true;
 	}else{	// 유효성 제공
 		document.getElementById("passspan").innerHTML="8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.";
-		document.getElementById("passspan").style.color ="red";
+		passSpan.style.color ="red";
 		password.focus();
+		passSpan.style.visibility ="visible";
 		return false;
 	};
 	
@@ -186,20 +178,25 @@ function passCheck(){
 function passDCheck(){
 	var password1 = document.getElementById("registration-form-password");
 	var pwVerified = document.getElementById("registration-form-password-confirm");
+	var repassSpan = document.getElementById("repasssp");
 	// 비밀번호 확인(repasssp)
 	
 	if(pwVerified.value == ""){ // 비밀번호재확인 공백시
 		document.getElementById("repasssp").innerHTML="필수 항목입니다.";
-		document.getElementById("repasssp").style.color ="red";
+		repassSpan.style.color ="red";
+		repassSpan.style.visibility ="visible";
 		/*pwVerified.focus();*/
+		repassSpan
 		return false;
 	}else if(password1.value==pwVerified.value){ 
 		document.getElementById("repasssp").innerHTML="비밀번호 일치";
-		document.getElementById("repasssp").style.color="green";
+		repassSpan.style.color="green";
+		repassSpan.style.visibility ="visible";
 		return true;
 	}else{
 		document.getElementById("repasssp").innerHTML="비밀번호가 일치하지 않습니다.";
-		document.getElementById("repasssp").style.color="red";
+		repassSpan.style.color="red";
+		repassSpan.style.visibility ="visible";
 		return false;
 	};
 }
@@ -209,20 +206,24 @@ function fnameCheck(){
 	// 이름
 	var firstname = document.getElementById("registration-form-fname");
 	var fnameJ = /^[가-힣]{2,6}$/; //한글로 시작, 최소 2글자~최대 6글자
+	var fnameSpan = document.getElementById("spanfirstname");
 	
 	if(firstname.value == ""){	// 이름 공백시
 		document.getElementById("spanfirstname").innerHTML="이름을 입력해주세요.";
-		document.getElementById("spanfirstname").style.color ="red";
+		fnameSpan.style.color ="red";
 		firstname.focus();
+		fnameSpan.style.visibility ="visible";
 		return false;
 		}else if(fnameJ.test(firstname.value)){	// 이름 유효성
 		document.getElementById("spanfirstname").innerHTML="멋진 이름이네요^^";
-		document.getElementById("spanfirstname").style.color="green";
+		fnameSpan.style.color="green";
+		fnameSpan.style.visibility ="visible";
 		return true;
 		}else{
 		document.getElementById("spanfirstname").innerHTML="이름을 다시 입력하세요";
-		document.getElementById("spanfirstname").style.color="red";
+		fnameSpan.style.color="red";
 		firstname.focus();
+		fnameSpan.style.visibility ="visible";
 		return false;
 		};
 }
@@ -231,23 +232,26 @@ function fnameCheck(){
 function phoneCheck(){
 	// 연락처
 	var phone = document.getElementById("phone");
-	var phoneJ = /^01([0|1|6|7|8|9]?)?([0-9]{3,4})?([0-9]{4})$/;
-	//var reg = /^[0-9]+/g; // 숫자만 입력하는 정규식
+	var phoneJ = /^01([0|1|6|7|8|9]?)?([0-9]{3,4})?([0-9]{4})$/; //var reg = /^[0-9]+/g; // 숫자만 입력하는 정규식
+	var phoneSpan = document.getElementById("phonespan");
 		
 
 	if(phone.value == ""){	// 연락처 공백시
-		document.getElementById("phonespan").innerHTML="연락처를 입력해주세요.";
-		document.getElementById("phonespan").style.color ="red";
+		phoneSpan.innerHTML="연락처를 입력해주세요.";
+		phoneSpan.style.color ="red";
 		phone.focus();
+		phoneSpan.style.visibility="visible";
 		return false;
 	}else if(phoneJ.test(phone.value)){  // 연락처 유효성
-		document.getElementById("phonespan").innerHTML="확인되었습니다.";
-		document.getElementById("phonespan").style.color="green";	
+		phoneSpan.innerHTML="확인되었습니다.";
+		phoneSpan.style.color="green";
+		phoneSpan.style.visibility="visible";
 		return true;
 	}else if(!phoneJ.test(phone.value)){
-		document.getElementById("phonespan").innerHTML="010 부터 숫자만 입력해주세요";
-		document.getElementById("phonespan").style.color="red";
+		phoneSpan.innerHTML="010 부터 숫자만 입력해주세요";
+		phoneSpan.style.color="red";
 		phone.focus();
+		phoneSpan.style.visibility="visible";
 		return false;
 	}
 }
@@ -289,45 +293,55 @@ $(document).on("click", "input:checkbox[name=cbox]", function(e) {
 
 
 // 주소, 상세 주소 필수입력
-function addrCheck(){
-	var addr1 = document.getElementById("addr");
+function postnumCheck() {
+	  var postcode = document.getElementById("sample6_postcode");
+	  var postNumSpan = document.getElementById("postNumSpan");
+	  
+	  
+	  if (postcode.value.length === 0) {
+		postNumSpan.innerHTML = "필수 입력바랍니다.";
+	    postNumSpan.style.color = "red";
+	    postcode.focus();
+	    postNumSpan.style.visibility = "visible"; // span 요소를 보이게 함
+	    return false;
+	  } else if (postcode.value.length < 5) {
+		postNumSpan.innerHTML = "재입력 바랍니다.";
+	    postNumSpan.style.color = "red";
+	    postcode.focus();
+	    postNumSpan.style.visibility = "visible"; // span 요소를 보이게 함
+	    return false;
+	  } else {
+		postNumSpan.innerHTML = "확인되었습니다.";
+	    postNumSpan.style.color = "green";
+	    postNumSpan.style.visibility = "visible"; // span 요소를 보이게 함
+	    return true;
+	  }
 	
-	if(addr1.value.length == 0){
-		document.getElementById("addrSpan").innerHTML="필수 입력바랍니다.";
-		document.getElementById("addrSpan").style.color="red";
-		addr1.focus();
-		return false;
-	}else if(addr1.value.length < 8){
-		document.getElementById("addrSpan").innerHTML="재입력 바랍니다.";
-		document.getElementById("addrSpan").style.color="red";
-		addr1.focus();
-		return false;
-	}else{
-		document.getElementById("addrSpan").innerHTML="확인되었습니다.";
-		document.getElementById("addrSpan").style.color="green";
-		return true;
-	}	
-}
-	
-function detailAddrCheck(){
-	var addr2 = document.getElementById("detailAddr");
-	
-	if(addr2.value.length == 0){
-		document.getElementById("detailAddrSpan").innerHTML="필수 입력바랍니다.";
-		document.getElementById("detailAddrSpan").style.color="red";
-		addr2.focus();
-		return false;
-	}else if(addr2.value.length < 8){
-		document.getElementById("detailAddrSpan").innerHTML="재입력 바랍니다.";
-		document.getElementById("detailAddrSpan").style.color="red";
-		addr2.focus();
-		return false;
-	}else{
-		document.getElementById("detailAddrSpan").innerHTML="확인되었습니다.";
-		document.getElementById("detailAddrSpan").style.color="green";
-		return true;
-	}	
-}
+};
+
+function addr1Check() {
+	  var addr1 = document.getElementById("sample6_address");
+	  var spanAddr1 = document.getElementById("spanAddr1");
+	  
+	  if (addr1.value.length === 0) {
+		  spanAddr1.innerHTML = "필수 입력바랍니다.";
+		  spanAddr1.style.color = "red";
+	    addr1.focus();
+	    spanAddr1.style.visibility = "visible"; // span 요소를 보이게 함
+	    return false;
+	  } else if (addr1.value.length < 8) {
+		  spanAddr1.innerHTML = "재입력 바랍니다.";
+		  spanAddr1.style.color = "red";
+	    addr1.focus();
+	    spanAddr1.style.visibility = "visible"; // span 요소를 보이게 함
+	    return false;
+	  } else {
+		  spanAddr1.innerHTML = "확인되었습니다.";
+		  spanAddr1.style.color = "green";
+		  spanAddr1.style.visibility = "visible"; // span 요소를 보이게 함
+	    return true;
+	  }
+};
 
 
 function checkboxCheck1(){
@@ -544,7 +558,7 @@ function form_submit(){
 		box3.focus();
 		return false;
 	}else{
-		alert("비비아나 회원이 되신걸 환영합니다^^");
+		alert("비비아나 회원이 되신걸 환영합니다^^ \n 다시 로그인 해주세요~");
 		document.formTotal.submit();  
 	}
 }

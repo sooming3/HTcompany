@@ -7,23 +7,51 @@
   <mapper namespace="org.ht.mapper.MemberMapper">
   	<insert id="memreg">
 		insert into Viviana_member 
-		values (#{User_id},#{User_password},#{User_name},#{User_phone},
-		#{User_gender},#{User_birth},#{User_interest},#{postnum},#{User_addr1},#{User_addr2},#{User_addr3},
-		#{User_marketing_agree}, now());  	
+		values (#{id},#{password},#{name},#{phone},
+		#{gender},#{birthMonth},#{birthDay},#{interest},#{postnum},#{addr1},#{addr2},#{addr3},
+		#{marketing_agree}, now());  	
   	</insert>
   	
   	
   	<select id="login" resultType="org.ht.model.MemberVO">
-  		select User_id, User_password
+  		select id, password, name, phone, postnum, addr1, addr2, addr3
   		from Viviana_member
-  		where User_id=#{User_id} and User_password=#{User_password}
+  		where id=#{id} and password=#{password}
   	</select>
   	
   	<!-- 아이디 중복체크  -->
   	<select id="idChk" parameterType="String" resultType="boolean">
   		select count(*)
   		from Viviana_member
-  		where User_id = #{User_id};
+  		where id = #{id};
   	</select>
   	
+  	
+  	<!-- 개인정보 조회 및 수정페이지 -->
+  	<select id="readMember" resultType="org.ht.model.MemberVO">
+  		select id, password, name, phone,birthMonth,birthDay, postnum, addr1, addr2, addr3
+  		from Viviana_member
+  		where id=#{id}
+  	</select>
+  	
+  	
+  	<update id="memberModify">
+  		update Viviana_member
+		set password = #{password},
+			name = #{name},
+  			phone = #{phone},
+  			birthMonth = #{birthMonth},
+  			birthDay = #{birthDay},
+  			postnum = #{postnum},
+  			addr1 = #{addr1},
+  			addr2 = #{addr2},
+  			addr3 = #{addr3}
+		where id=#{id}
+  	</update>
+  
+	<delete id="memberRemove">
+		delete from Viviana_member where id = #{id}
+	</delete>  
+  
+
   </mapper>

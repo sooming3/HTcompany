@@ -96,4 +96,11 @@ public class HomeController {
 	return "cartPage";
 	}*/
 
+	
+	//개인정보 수정
+	/*@RequestMapping(value="personalInfo", method = RequestMethod.GET)
+	public String personalInfo() {   
+	return "/member/personalInfo";
+	}*/
+	
 }

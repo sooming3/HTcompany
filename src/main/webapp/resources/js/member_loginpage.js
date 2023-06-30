@@ -1,19 +1,16 @@
 
-$(function(){
-  // 눈표시 클릭 시 패스워드 보이기
-  $('.eyes').on('click',function(){
-    $('.input.password').toggleClass('active');
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("pw");
+    var eyeIcon = document.getElementById("eyeIcon");
 
-    if( $('.input.password').hasClass('active') == true ){
-    	$(this).find('.fa-eye').attr('class',"fa fa-eye-slash fa-lg").parents('.input').find('#pw').attr('type',"text");
-    				// i 클래스                // 텍스트 보이기 i 클래스
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.className = "fa fa-eye-slash fa-lg"; // Change the icon to an eye with a slash
+    } else {
+      passwordInput.type = "password";
+      eyeIcon.className = "fa fa-eye fa-lg"; // Change the icon back to a regular eye
     }
-    else{
-    	$(this).find('.fa-eye-slash').attr('class',"fa fa-eye fa-lg").parents('.input').find('#pw').attr('type','password');
-    }
-  });
-});
-
+  }
 
 
 //--------------------------------------------------------------------------
@@ -71,7 +68,7 @@ function login(){	// submit()말고 다른 함수명 줘야함?
 		  pwField.focus();
 		  return false;
 	  }else{
-		  alert("비비아나 로그인 완료");
+		  
 			document.loginForm.submit(); 
 	  }	  
 }

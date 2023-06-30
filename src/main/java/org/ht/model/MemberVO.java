@@ -1,110 +1,111 @@
 package org.ht.model;
 
 public class MemberVO{
-	private String User_id;
-	private String User_password;
-	private String User_name;
-	private String User_phone;
-	private String User_gender;
-	private String User_birth;
-	private String User_interest;
+	private String id;
+	private String password;
+	private String name;
+	private String phone;
+	private String gender;
+	private String birthMonth;
+	private String birthDay;
+	private String interest;
 	private String postnum;
-	private String User_addr1;
-	private String User_addr2;
-	private String User_addr3;
-	private String User_marketing_agree;
-	private String User_regdate;
+	private String addr1;
+	private String addr2;
+	private String addr3;
+	private String marketing_agree;
+	private String regdate;
 	
-	
-	public String getUser_id() {
-		return User_id;
+	public String getId() {
+		return id;
 	}
-	public void setUser_id(String user_id) {
-		User_id = user_id;
+	public void setId(String id) {
+		this.id = id;
 	}
-	public String getUser_password() {
-		return User_password;
+	public String getPassword() {
+		return password;
 	}
-	public void setUser_password(String user_password) {
-		User_password = user_password;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getUser_name() {
-		return User_name;
+	public String getName() {
+		return name;
 	}
-	public void setUser_name(String user_name) {
-		User_name = user_name;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getUser_phone() {
-		return User_phone;
+	public String getPhone() {
+		return phone;
 	}
-	public void setUser_phone(String user_phone) {
-		User_phone = user_phone;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-	public String getUser_gender() {
-		return User_gender;
+	public String getGender() {
+		return gender;
 	}
-	public void setUser_gender(String user_gender) {
-		User_gender = user_gender;
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
-	public String getUser_birth() {
-		return User_birth;
+	public String getBirthMonth() {
+		return birthMonth;
 	}
-	public void setUser_birth(String user_birth) {
-		User_birth = user_birth;
+	public void setBirthMonth(String birthMonth) {
+		this.birthMonth = birthMonth;
 	}
-	public String getUser_interest() {
-		return User_interest;
+	public String getBirthDay() {
+		return birthDay;
 	}
-	public void setUser_interest(String user_interest) {
-		User_interest = user_interest;
+	public void setBirthDay(String birthDay) {
+		this.birthDay = birthDay;
 	}
-	public String getUser_addr1() {
-		return User_addr1;
+	public String getInterest() {
+		return interest;
 	}
-	public void setUser_addr1(String user_addr1) {
-		User_addr1 = user_addr1;
+	public void setInterest(String interest) {
+		this.interest = interest;
 	}
-	public String getUser_addr2() {
-		return User_addr2;
-	}
-	public void setUser_addr2(String user_addr2) {
-		User_addr2 = user_addr2;
-	}
-	public String getUser_addr3() {
-		return User_addr3;
-	}
-	public void setUser_addr3(String user_addr3) {
-		User_addr3 = user_addr3;
-	}
-	public String getUser_marketing_agree() {
-		return User_marketing_agree;
-	}
-	public void setUser_marketing_agree(String user_marketing_agree) {
-		User_marketing_agree = user_marketing_agree;
-	}
-	public String getUser_regdate() {
-		return User_regdate;
-	}
-	public void setUser_regdate(String user_regdate) {
-		User_regdate = user_regdate;
-	}
-	
-	
-
 	public String getPostnum() {
 		return postnum;
 	}
 	public void setPostnum(String postnum) {
 		this.postnum = postnum;
 	}
-	
+	public String getAddr1() {
+		return addr1;
+	}
+	public void setAddr1(String addr1) {
+		this.addr1 = addr1;
+	}
+	public String getAddr2() {
+		return addr2;
+	}
+	public void setAddr2(String addr2) {
+		this.addr2 = addr2;
+	}
+	public String getAddr3() {
+		return addr3;
+	}
+	public void setAddr3(String addr3) {
+		this.addr3 = addr3;
+	}
+	public String getMarketing_agree() {
+		return marketing_agree;
+	}
+	public void setMarketing_agree(String marketing_agree) {
+		this.marketing_agree = marketing_agree;
+	}
+	public String getRegdate() {
+		return regdate;
+	}
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
+	}
 	
 	@Override
 	public String toString() {
-		return "MemberVO [User_id=" + User_id + ", User_password=" + User_password + ", User_name=" + User_name
-				+ ", User_phone=" + User_phone + ", User_gender=" + User_gender + ", User_birth=" + User_birth
-				+ ", User_interest=" + User_interest + ", postnum=" + postnum + ", User_addr1=" + User_addr1
-				+ ", User_addr2=" + User_addr2 + ", User_addr3=" + User_addr3 + ", User_marketing_agree="
-				+ User_marketing_agree + ", User_regdate=" + User_regdate + "]";
+		return "MemberVO [id=" + id + ", password=" + password + ", name=" + name + ", phone=" + phone + ", gender="
+				+ gender + ", birthMonth=" + birthMonth + ", birthDay=" + birthDay + ", interest=" + interest
+				+ ", postnum=" + postnum + ", addr1=" + addr1 + ", addr2=" + addr2 + ", addr3=" + addr3
+				+ ", marketing_agree=" + marketing_agree + ", regdate=" + regdate + "]";
 	}
 }

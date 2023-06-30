@@ -13,7 +13,7 @@
 	/* height: 100%; 적용불가...*/
 	
  }
- #join_main .join_wrap{
+#join_main .join_wrap{
  width: 100%;
 margin: 0 auto;
  }
@@ -31,7 +31,7 @@ transform: translateX(-50%);
 
 #join_h2 {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 38px;
   font-size: 19px;
 
 }
@@ -48,6 +48,8 @@ transform: translateX(-50%);
   width: 360px;
   
 }
+
+#login_password{position:absolute; margin:-31px 300px;}
 .check {
   padding: 30px 50px;
   width: 370px;
@@ -72,20 +74,19 @@ transform: translateX(-50%);
    width: 360px;
   margin: 0 auto;
 }
-
+.requirement_info_inner_size .required .requireInfo{margin:10px;}
 
 .form-control {
-  margin-bottom: 2px;
-  margin-top: 5px;
-  width: 280px;
-  height: 26px;
+ margin: 6px 0 3px -20px;
+ width: 340px;
+ height: 28px;
 }
 
 .join_h3 {
-	font-family: Sans-Serif;
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #5D5D5D;
+ font-family: Sans-Serif;
+ font-size: 18px;
+ margin: 20px 0 18px -19px;
+ color: #5D5D5D;
 }
 
 #join_select{
@@ -112,8 +113,9 @@ transform: translateX(-50%);
 }
 .hiddenText{
 	width:300px;
-	display:inline-block;
-	padding-bottom:5px; /* 10px */
+	visibility:hidden;
+	height:30px;
+	padding-bottom:10px; /* 10px */
   	font-size: 12px;
   	line-height: 1.1em;
 }
@@ -176,7 +178,7 @@ transform: translateX(-50%);
 .t3 {
   color: #777;
   font-size: 14px;
-  margin: 10px;
+  margin: 83px 0 0 -20px;
 }
 .category {
   margin-top: 25px;

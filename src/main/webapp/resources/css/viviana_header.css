@@ -37,11 +37,27 @@ body {
 	float: left;
 }
 
+
+
 .header_icon_right{
-	width:200px;
+	width:230px;
 	padding:10px;
 	float: right;
 }
+
+/* 로그인, 로그아웃 */
+.header_icon_right .memberLogin{font-size: 13px; margin:3px;}
+
+
+.header_icon_right .memberLogin .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#personalPostMethod{position:relative;}
 
 .header_iconimg_left{
 	width:24px;

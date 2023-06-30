@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +21,7 @@
 	
 	<!-- header js -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="/resources/js/viviana_header.js" type="text/javascript"></script>
 	<!-- Swiper JS -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -36,9 +39,15 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/product_detail.css">
     
     <!-- 성언 -->
+
+    
     <link rel="stylesheet" href="/resources/css/member_loginpage.css">
 	<link rel="stylesheet" href="/resources/css/member_joinpage.css">
 	<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pzTywL1yXCjWlM7BP+PBVd8tj5TXvi34+YxY4FxsB0iZh94zFZpr77JiNo/Adon6BYzN3HgU2wZk5XdBty0b9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	
 	<!-- 회원가입페이지 -비밀번호 눈 모양 아이콘 -->	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<!--Font-aweome-->
@@ -71,11 +80,26 @@
 		</div>
 		
 		<div class="header_icon_right">
+
 			<a href="/cart"><img onmouseover="view(true)" class="header_iconimg_right" src="/resources/icon/shopping_icon.png" alt="쇼핑"></a>
 				<%@ include file="cartPage_sideMenu.jsp"%>
 			<a href="/list"><img class="header_iconimg_right" src="/resources/icon/like_icon.png" alt="좋아요"></a>
-			<a href="/login"><img class="header_iconimg_right" src="/resources/icon/login2_icon.png" alt="사용자"></a>
+			
 			<a href="#"><img class="header_iconimg_right" src="/resources/icon/notification_icon.png" alt="알림"></a>
+		<!-- 성언  -->
+		<c:choose>
+		    <c:when test="${empty sessionScope.login}">
+		      <!-- 로그인하지 않은 상태 -->
+		      <a href="/login"><span class="material-symbols-outlined header_iconimg_right">login</span></a>
+		    </c:when>
+		    <c:otherwise>
+		      <!-- 로그인한 상태 -->
+		      <span class="memberLogin">${login.name} &nbsp;님</span>
+		     <!--  <a href="logout.do"><span class="material-symbols-outlined header_iconimg_right" onclick="logOUT_ment()">logout</span></a> -->
+		     <a href="#" onclick="logout()"><span class="material-symbols-outlined header_iconimg_right">logout</span></a>
+		      <a href="/personalInfo"><img class="header_iconimg_right" src="/resources/icon/login2_icon.png" alt="사용자"></a> 
+		    </c:otherwise>
+		 </c:choose>
 		</div>
 	
 	</div>

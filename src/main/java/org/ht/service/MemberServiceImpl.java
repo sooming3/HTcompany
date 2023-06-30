@@ -27,5 +27,27 @@ public class MemberServiceImpl implements MemberService {
 
         return response;
     }
+	
+
+	//개인정보 조회 및 수정페이지
+	public MemberVO readMember(String id) {
+		// You can add input validation and error handling here
+	    if(id == null) {
+	        throw new IllegalArgumentException("ID cannot be null");
+	    }
+		return mm.readMember(id);
+	}
+			
+	// 회원정보 수정
+	public void memberModify(MemberVO member) {
+		mm.memberModify(member);
+		
+	}
+	
+	//회원 정보 삭제
+	public void memberRemove(MemberVO member) {
+		mm.memberRemove(member);
+	}
+	
 }
 

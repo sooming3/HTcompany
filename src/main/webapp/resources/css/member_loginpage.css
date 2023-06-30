@@ -134,6 +134,8 @@ ul {
 	margin-left: 0;
 	font-size: 12px;
 }
+
+#eyeIcon{position:absolute; margin:-35px 327px 0 240px;}
 #passwordspan{
 	position: relative; 
 	margin-right:181px;
