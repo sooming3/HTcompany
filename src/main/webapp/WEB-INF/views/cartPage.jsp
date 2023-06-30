@@ -1,78 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <%@ include file="viviana_header.jsp"%>
 
 <div id="cartPage_all">
+<div class="modal-overlay"></div>
 
-	<!-- 사이드 메뉴 -->
-	<div id="sideMenu" onmouseout="view(false)" onmouseover="view(true)">
-		<h2>쇼핑백 (3)</h2>
-		<hr>
-	<div class="sideMenuGoods">
- 		<img class="icon_remove" src="resources/img/icon_remove.png" onclick="choicePopup()">
-		<div class="product_img_div">
-			<img class="product_img" src="resources/img/neck1.jpg">
-		</div>
-		<div class="product_div">
-			<h4 class="sideMenu-item-title"><a href="#">수민 찰떡 네크리스</a></h4>
-			<div class="sideMenu-goods-style" style="font-size: 12px;">스타일<span class="color-reference"># ‎723391 C9D00 9022</span></div>
-				<ul class="sideMenu-baglist-item-properties">
-					<li>
-					<span class="property-name">색상</span>:
-					<span class="property-value-style">화이트 레더</span>
-					</li>
-					<li>
-					<span class="property-name">사이즈</span>:
-					<span class="property-value-size">35.5 = 225 KR</span>
-					</li>
-				</ul>
-			<div class="sideMenu-shipping-info">
-				<p class="sideMenu-stock"><b>재고 보유</b></p>
-			</div>
-			<div>
-				<span class="baglist-item-price THREE">
-				<span>₩ 1,220,000</span>
-				</span>
-			</div>
-		</div> 
-	</div>
-		<div id="order-sum">
-			<div><hr></div>
-			<div>
-				<span><b>합계</b></span>
-				<span><b>₩10,000,000</b></span>
-			</div>
-			<button class="button">구매하기</button>
-		</div>
-	</div>
 	
 	<!-- 메인 이미지  -->
 	<div id="gift"><img src="resources/img/main.jpg"></div>
-	<h1 id="shoppingBag" align="center">Shopping Bag (3)</h1>
+	
 		
 	
 <div id="cartPage">
 <!-- 품목 부분 -->
 <div id="all">
-	<button onclick="openPopup()" style="float:right;">전체 삭제</button>
+	<button class="all_remove" style="float:right;">전체 삭제</button>
 	<hr style="width:800px; background:#E6E3DF; height:1px; border:0;">
 	
 	<!-- 전체삭제 팝업 -->	
-	<div id="removePopup">
-		<div align="right"><img onclick="removePopup()" class="iconX" src="resources/img/icons_x.png"></div>
+	<div id="removeModal">
+		<div align="right"><img class="modal_close iconX" src="resources/img/icons_x.png"></div>
 		<p>쇼핑백에 담긴 상품을 전부 비우시겠습니까?</p>
 		<div>
-		<button onclick="allremove()" class="button">확인</button>
-		<button onclick="removePopup()" class="button">취소</button>
+		<button class="all_remove_btn button">확인</button>
+		<button class="modal_close button">취소</button>
 		</div>
 	</div>
 	
-		<!-- 메인 장바구니 -->
+	<!-- 메인 장바구니 -->
+	<c:set var="count" value="0" />
+	<c:set var="totalPrice" value="0" />
 	<c:forEach var="list" items="${list}">
+		<!-- 반복된만큼 카운트 -->
+		<c:set var="count" value="${count + 1}" />
 		<div class="goods">
-			<img class="icon_remove" onclick="choicePopup()" src="resources/img/icon_remove.png">
+			<img class="img icon_remove" src="resources/img/icon_remove.png">
 			<div class="product_img_div">
 				<img class="product_img" src="resources/img/neck1.jpg">
 			</div>
@@ -108,17 +73,18 @@
 				<div class="footer-item">
 					<div class="baglist-item-actions">
 						<div class="edit-action">
-							<button onclick="openPopup2()" type="button">옵션 수정</button>
-							<button type="button" onclick="choicePopup()">삭제</button>
+							<button type="button" class="option_update">옵션 수정</button>
+							<button type="button" class="icon_remove">삭제</button>
 		 					<button type="button">♡위시리스트 담기</button>
 						</div>
 					</div>
 				</div> 
 			</div>
 			<!-- 수량, 가격 부분 --> 
+			<c:set var="totalPrice" value="${totalPrice + list.c_price}" />
 			<div class="price-label">
 				<span class="baglist-item-price THREE">
-					<span>₩ <span class="onlyPrice">${list.c_price}</span></span>
+					<span>₩ <span class="onlyPrice"><fmt:formatNumber value="${list.c_price}" pattern="#,###" /></span></span>
 				</span> 
 			</div>
 			<div class="quantity">
@@ -126,42 +92,51 @@
 				<label class="quantity-label" for="qty-723391C9D009022">수량:</label>
 					<select class="numOption">
 						<option selected value="${list.c_quantity}">${list.c_quantity}</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
 					</select>
 				</div>
 			</div>
 		</div>
 	</c:forEach>
 		
+	<h1 id="shoppingBag" align="center">Shopping Bag (${count})</h1>
+		
 <!-- 선택 삭제 팝업 -->	
-	<div id="choicePopup">
-		<div align="right"><img onclick="deletePopup()" class="iconX" src="resources/img/icons_x.png"></div>
+	<div id="choiceModal">
+		<div align="right"><img class="modal_close iconX" src="resources/img/icons_x.png"></div>
 		<p>선택한 상품을 쇼핑백에서 지우시겠습니까?</p>
 		<div>
 		<button class="button">확인</button>
-		<button onclick="deletePopup()" class="button">취소</button>
+		<button class="modal_close button">취소</button>
 		</div>
 	</div>
 <!-- 옵션 수정 팝업창 -->
-	<div id="updatePopup">
-		<div align="right"><img onclick="removePopup2()" class="iconX" src="resources/img/icons_x.png"></div>
+	<div id="updateModal">
+		<div align="right"><img class="modal_close iconX" src="resources/img/icons_x.png"></div>
 		<div align="center" style="margin-bottom: 30px;">
 			<h2>옵션 수정</h2>
 		</div>
-		<div id="updatePopup-left">
+		<div id="updateModal-left">
 			<img src="resources/img/neck1.jpg" width="260px" height="260px">
 			<!-- <div>수민 찰떡 네크리스</div> -->
 		</div>
-		<div id="updatePopup-right">
+		<div id="updateModal-right">
+			<fieldset>
+				<label class="quantity-label" for="qty-723391C9D009022">수량</label>
+				<div>
+				<select name="" class="selectStyle" data-index="0" aria-label="Quantity" data-custom-select-prefix="수량" tabindex="-1" aria-hidden="true">
+					<option selected="selected" value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+				</div>
+			</fieldset>
 			<fieldset>
 				<label class="quantity-label" for="qty-723391C9D009022">색상</label>
 				<div>
 				<select name="" class="selectStyle" data-index="0" aria-label="Quantity" data-custom-select-prefix="수량" tabindex="-1" aria-hidden="true">
-					<option selected="selected" value="1">골드</option>
-					<option value="2">로즈골드</option>
-					<option value="3">실버</option>
+					<option selected="selected" value="골드">골드</option>
+					<option value="로즈골드">로즈골드</option>
+					<option value="실버">실버</option>
 				</select>
 				</div>
 			</fieldset>
@@ -179,7 +154,7 @@
 		</div>
 		<div align="center" style="margin-top: 40px;">		
 			<button class="button" style="display:inline-block; width:250px;">변경 사항 저장</button><br>
-			<button class="button" style="display:inline-block; width:250px;" onclick="removePopup2()">취소</button>
+			<button class="modal_close button" style="display:inline-block; width:250px;">취소</button>
 		</div>
 	</div>
 	
@@ -194,7 +169,7 @@
 		<ul class="order-details-totals">
 			<li class="shopping-bag-subtotal">
                 <span class="order_left">상품 수</span>
-                <span class="order_right" dir="ltr">3 개</span>
+                <span class="order_right" dir="ltr">${count} 개</span>
             </li>
 			<li>
 				<span class="order_left">배송비</span>
@@ -204,7 +179,7 @@
 			</li>
 			<li class="shopping-bag-estimated-total">
 				<span class="order_left">합계</span>
-				<span class="order_right" dir="ltr">₩ <b>3,440,000</b></span>
+				<span class="order_right" dir="ltr">₩ <b><fmt:formatNumber value="${totalPrice}" pattern="#,###" /></b></span>
  			</li>
 		</ul>
 		<hr>
@@ -230,6 +205,11 @@
 </div>
 
 </div>
+
+
+<!-- 사이드 메뉴 -->
+<%@ include file="cartPage_sideMenu.jsp"%>
+	
 <!-- 전체 페이지 종료 -->
 
 <%@ include file="viviana_footer.jsp"%>

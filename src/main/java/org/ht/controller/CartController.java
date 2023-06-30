@@ -1,5 +1,7 @@
 package org.ht.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.ht.model.CartVO;
 import org.ht.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +18,12 @@ public class CartController {
 	CartService cs; 
 		
 	@RequestMapping(value = "/cart", method = RequestMethod.GET)
-	public String cartList(Model model, CartVO cart) {
+	public String cartList(HttpSession session, CartVO cart) {
 		cs.cartList(cart);
-		model.addAttribute("list", cs.cartList(cart));
+		session.setAttribute("list", cs.cartList(cart));
 		System.out.println(cs.cartList(cart));
-		return "cartPage";   
+		return "cartPage";
 	}
+	
+	
 }
