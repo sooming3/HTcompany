@@ -35,12 +35,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- 수미 -->
-    <link rel="stylesheet" type="text/css" href="/resources/css/product.css"> 
+    <!-- <link rel="stylesheet" type="text/css" href="/resources/css/product.css">  -->
     <link rel="stylesheet" type="text/css" href="/resources/css/product_detail.css">
     
     <!-- 성언 -->
-
-    
     <link rel="stylesheet" href="/resources/css/member_loginpage.css">
 	<link rel="stylesheet" href="/resources/css/member_joinpage.css">
 	<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
