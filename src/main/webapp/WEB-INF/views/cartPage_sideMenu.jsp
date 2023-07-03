@@ -55,6 +55,7 @@
 				<span><b>₩ <fmt:formatNumber value="${totalPrice}" pattern="#,###" /></b></span>
 			</div>
 			<button class="button">구매하기</button>
+			<a href="/cart" title="쇼핑백으로 이동" id="shoppingBagLink">쇼핑백 페이지로 이동</a>
 		</div>
 	</div>
 	

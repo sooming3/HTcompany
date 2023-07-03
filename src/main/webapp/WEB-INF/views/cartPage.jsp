@@ -29,7 +29,8 @@
 		<button class="modal_close button">취소</button>
 		</div>
 	</div>
-	
+
+<form>	
 	<!-- 메인 장바구니 -->
 	<c:set var="count" value="0" />
 	<c:set var="totalPrice" value="0" />
@@ -157,7 +158,7 @@
 			<button class="modal_close button" style="display:inline-block; width:250px;">취소</button>
 		</div>
 	</div>
-	
+</form>
 </div>
 <!-- 품목 부분 종료-->
 

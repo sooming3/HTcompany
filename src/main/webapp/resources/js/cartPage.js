@@ -2,7 +2,7 @@
 function view(opt) {
 	if(opt) {
 		sideMenu.style.display = "block";
-		$('body').css('overflow', 'hidden');
+		// $('body').css('overflow', 'hidden');
 	}
 	else {
 		sideMenu.style.display = "none";
