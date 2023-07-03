@@ -1,5 +1,4 @@
-
-  function togglePasswordVisibility() {
+function togglePasswordVisibility() {
     var passwordInput = document.getElementById("pw");
     var eyeIcon = document.getElementById("eyeIcon");
 
@@ -12,8 +11,20 @@
     }
   }
 
-
-//--------------------------------------------------------------------------
+//관리자 라디오 체크 시 input name 값 변경
+function changeInputNames() {
+    var isAdmin = document.getElementById("adminRadio").checked;
+    var idInput = document.getElementById("email");
+    var pwInput = document.getElementById("pw");
+    
+    if (isAdmin) { //관리자면
+        idInput.name = "adminid";
+        pwInput.name = "adminpwd";
+    } else {
+        idInput.name = "id";
+        pwInput.name = "password";
+    }
+}
 
 function checkNotEmpty() {	// 아이디 공백 시 스팬문구 띄우기
   var idField = document.getElementById("email");

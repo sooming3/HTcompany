@@ -1,5 +1,6 @@
 package org.ht.mapper;
 
+import org.ht.model.AdminVO;
 import org.ht.model.MemberVO;
 
 public interface MemberMapper {
@@ -15,6 +16,9 @@ public interface MemberMapper {
 	
 	//회원 정보 삭제
 	public void memberRemove(MemberVO member);
-
+	
+	
+	//관리자 로그인
+	public AdminVO adminLogin(AdminVO admin);
 }
 

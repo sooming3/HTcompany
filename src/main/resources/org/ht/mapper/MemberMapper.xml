@@ -53,5 +53,13 @@
 		delete from Viviana_member where id = #{id}
 	</delete>  
   
+  
+   <!-- 관리자 로그인 -->
+    <select id="adminLogin" resultType="org.ht.model.AdminVO">
+        SELECT adminid, name
+		FROM admin 
+        WHERE adminid = #{adminid} 
+        AND adminpwd = #{adminpwd}
+    </select>
 
   </mapper>
