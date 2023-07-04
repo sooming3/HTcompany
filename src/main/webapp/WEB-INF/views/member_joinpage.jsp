@@ -73,7 +73,7 @@
              <option>5월</option><option>6월</option><option>7월</option><option>8월</option><option>9월</option><option>10월</option>
              <option>11월</option><option>12월</option>
            </select>
-           <select name="birthDay">
+           <select name="birthDay" id="birthDaySelect">
              <option>선택</option><option>1일</option><option>2일</option><option>3일</option><option>4일</option><option>5일</option><option>6일</option><option>7일</option>
              <option>8일</option><option>9일</option><option>10일</option><option>11일</option><option>12일</option><option>13일</option><option>14일</option><option>15일</option>
              <option>16일</option><option>17일</option><option>18일</option><option>19일</option><option>20일</option><option>21일</option><option>22일</option><option>23일</option>
@@ -110,20 +110,20 @@
 	          <input type="checkbox" class="checkbox" name="interest" id="cboxAll" onclick="checkAll()"/>
 	          <label for="allPreferences" class="checkbox-label" >모두</label >
 	        </div>
-	        <button type="button" id="category_check">카테고리 확인</button>
+	      <!--   <button type="button" id="category_check">카테고리 확인</button> -->
     </div> <!-- category -->
 </div><!-- personal_info_inner_size -->
 
 <div class="requirement_info_inner_size"><h3 class="join_h3">청구 정보</h3>
-            <div class="form-group required">
-            <input type="text" id="sample6_postcode" class="requireInfo" name="postnum" placeholder="우편번호">
+            <div class="form-group required postInfo">
+            <input type="text" id="sample6_postcode" class="requireInfo postInput" name="postnum" placeholder="우편번호">
             <span class="hiddenText"  id="postNumSpan"></span>
             <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-			<input type="text" id="sample6_address" class="requireInfo" name="addr1" placeholder="주소"><br>
+			<input type="text" id="sample6_address" class="requireInfo postInput" name="addr1" placeholder="주소"><br>
 			<span class="hiddenText"  id="spanAddr1"></span>
-			<input type="text" id="sample6_detailAddress" class="requireInfo" name="addr2" placeholder="상세주소">
+			<input type="text" id="sample6_detailAddress" class="requireInfo postInput" name="addr2" placeholder="상세주소">
 			<span class="hiddenText"  id="spanAddr2"></span>
-			<input type="text" id="sample6_extraAddress" class="requireInfo" name="addr3" placeholder="참고항목">
+			<input type="text" id="sample6_extraAddress" class="requireInfo postInput" name="addr3" placeholder="참고항목">
 			<span class="hiddenText"  id="spanAddr3"></span>
               <!-- <button type="button" class="join_checkbtn" onclick="execDaumPostcode()" >검색</button> -->
             </div>

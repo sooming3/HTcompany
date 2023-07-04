@@ -1,38 +1,16 @@
 @charset "UTF-8";
  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Gowun+Batang&family=Nanum+Myeongjo&family=Prosto+One&display=swap');
 
- 
-ul {
-  list-style: none;
-}
+ul {list-style: none;}
 
-/* a {
-  text-decoration: none;
-  color: inherit;
-} */
-
-#wrap {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-}
+#wrap {width: 100%;height: 100%;margin: 0 auto;}
 
 .login_input ::placeholder{ color: light-gray; }
-	/* input:hover { opacity: 0.5; } */
 
-#email {
-	width: 430px;
-	height: 50px;
-	/* border: none; */
-	border : 0.2px solid #DCDCDC; 	/* input태그는 호버 전이랑 호버 후의 border 똑같이 지정해야 안 밀림 */
-	padding: 0 8px;
-	margin-bottom: 2px;
-	font-size: 18px;
-}
+#email {width: 430px;height: 50px;border : 0.2px solid #DCDCDC; /* input태그는 호버 전이랑 호버 후의 border 똑같이 지정해야 안 밀림 */
+	padding: 0 8px;margin-bottom: 2px;font-size: 18px;}
 
-#email:hover{
-	border : 0.2px solid #DCDCDC;  /* input태그는 호버 전이랑 호버 후의 border 똑같이 지정해야 안 밀림 */
-}
+#email:hover{border : 0.2px solid #DCDCDC;  /* input태그는 호버 전이랑 호버 후의 border 똑같이 지정해야 안 밀림 */}
 
 #pw {
 	width: 430px;
@@ -86,7 +64,7 @@ ul {
 	height: 900px;
 }
 #login_section .inner_size #login_image {
-	width: 50%;
+	width: 52%;
 	object-fit: fill;
 	position: absolute; /* 기준을 대상으로 재배치 */
 	top: 118px;
@@ -97,8 +75,8 @@ ul {
 	position: absolute;/* 기준을 대상으로 재배치 */
 	width:30%;
 	text-align: center;
-	top: 48%;
-	right: 150px; /* 로그인 폼 가로 위치조정 */
+	top: 49%;
+	right: 160px; /* 로그인 폼 가로 위치조정 */
 	transform:translateY(-50%);
 }
 #login_section .inner_size .form h2 {
@@ -106,13 +84,10 @@ ul {
 }
 #login_section .inner_size .form form {
 }
-
 #login_section .inner_size .form .text {
-	margin-top: 55px;
-	/* width: 464px; */
-	width: 500px;
+	margin: 55px 0 0 -10px;
+	width: 495px;
 }
-
 #login_section .inner_size .form form p {
 	text-align: center;
 	color: #777;
@@ -125,23 +100,18 @@ ul {
 	margin-right: 30px; 
 	font-family: 'Fira Sans', sans-serif;
 }
-
-
-
 #emailspan {
 	position: relative; 
 	margin-right:195px;
 	margin-left: 0;
 	font-size: 12px;
 }
-
-#eyeIcon{position:absolute; margin:-35px 327px 0 240px;}
+#eyeIcon{position:absolute; margin:-35px 327px 0 240px; color:#777777;}
 #passwordspan{
 	position: relative; 
 	margin-right:181px;
 	margin-left: 0;
 	font-size: 12px;
 }
-
-#userRadio{width:320px; margin-bottom:10px; margin-top:1px;}
-#userRadio .userRadio{margin-right:9px; margin-left:76px;}
+#userRadio{width:370px; margin-bottom:13px; margin-top:-5px;color:#777777;font-size:15px;}
+#userRadio .userRadio{margin-right:9px; margin-left:84px;}

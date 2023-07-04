@@ -15,7 +15,7 @@
       	<span id="passwordspan"></span><br>
   <div id="loginbtn">
   <div id="userRadio">
-  <input type="radio" name="user" value="일반회원" class="userRadio" onchange="changeInputNames()" checked>일반회원
+  <input type="radio" name="user" value="일반회원" class="userRadio" onchange="changeInputNames()" checked>회원님
   <input type="radio" name="user" value="관리자" class="userRadio" id="adminRadio" onchange="changeInputNames()">관리자
   </div>
     <input type="button" value="로그인 하기" class="btn"  onclick="login()" /><br />

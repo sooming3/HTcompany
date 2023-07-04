@@ -1,121 +1,52 @@
 @charset "UTF-8";
 
  #wrap1 #join_main{
- width:100%;
-  margin : 0 auto;
-    background-image: url("../img/ff.jpg"); 
-/*   background-color: yellow;  */
-   background-position:center center;
-	   background-repeat:no-repeat;   
-	background-size: cover;
-	/* background-attachment: fixed; */
-	 height: 226vh; 
-	/* height: 100%; 적용불가...*/
-	
- }
-#join_main .join_wrap{
- width: 100%;
-margin: 0 auto;
- }
-#join_main .join_form {
-	padding: 40px 0;
-	position: absolute;
+width:100%;
+margin : 0 auto;
+background-image: url("../img/ff.jpg"); 
+background-position:center center;
+background-repeat:no-repeat;   
+background-size: cover;
+height: 226vh; /* height: 100%; 적용불가...*/}
+
+#join_main .join_wrap{width: 100%;margin: 0 auto;}
+
+#join_main .join_form {padding: 40px 0;
+position: absolute;
 top:200px;	/* position: absolute;일때 top, left  필수 */
 left: 50%;
-transform: translateX(-50%);
-	background-color: #F5F5F5; 
- 	width: 560px;
- 	opacity: 0.9;
- 	align: center;
-}
+transform: translateX(-50%);background-color: #F5F5F5; width: 560px;opacity: 0.9;align: center;}
 
-#join_h2 {
-  text-align: center;
-  padding-top: 38px;
-  font-size: 19px;
+#join_h2 {text-align: center;padding-top: 38px;font-size: 19px;}
+.t1 {font-size: 13px; margin-top: 20px;text-align: center;padding-bottom: 50px;}
 
-}
-.t1 {
-  font-size: 13px; 
-  margin-top: 20px;
-  text-align: center;
-  padding-bottom: 50px;
-}
+label .form-control-label{margin-left:-20px;}/*적용 안되고 있음 */
 
-.login_info_inner_size{
-  padding:0 0 50px 60px;
-  /* padding:0 0 50px 60px; 정중앙 */
-  width: 360px;
-  
-}
+.login_info_inner_size{padding:0 0 50px 60px; /* padding:0 0 50px 60px; 정중앙 */ width: 360px;}
 
 #login_password{position:absolute; margin:-31px 300px;}
-.check {
-  padding: 30px 50px;
-  width: 370px;
-  margin: 10px auto;
- 
-}
+.check {padding: 30px 50px;width: 370px;margin: 10px auto;}
+.login_info {}
 
-.login_info {
-}
-
-
-.personal_info_inner_size{
-  padding: 20px 50px;
-   padding:0 0 50px 60px;
-   width: 360px;
-  margin: 0 auto;
-}
-
-.requirement_info_inner_size{
-  padding: 20px 50px;
-   padding:0 0 50px 60px;
-   width: 360px;
-  margin: 0 auto;
-}
+.personal_info_inner_size{width: 360px;margin: 0 auto;}
+.requirement_info_inner_size{width: 360px;margin: 0 auto;}
 .requirement_info_inner_size .required .requireInfo{margin:10px;}
 
-.form-control {
- margin: 6px 0 3px -20px;
- width: 340px;
- height: 28px;
-}
+.form-control {margin: 6px 0 3px -20px;width: 330px;height: 28px;}
 
-.join_h3 {
- font-family: Sans-Serif;
- font-size: 18px;
- margin: 20px 0 18px -19px;
- color: #5D5D5D;
-}
+.join_h3 {font-family: Sans-Serif;font-size: 18px;margin: 20px 0 18px -19px;color: #5D5D5D;}
 
-#join_select{
-  width: 100px;
-  height: 30px;
-  margin-bottom: 20px;
-  margin-top: 5px;
-}
+#join_select{width: 100px;height: 30px;margin-bottom: 20px;margin-top: 5px;}
 
+.material-symbols-outlined {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48}
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
+.checkbox {width: 15px;height: 15px;font-size: 14px;margin: 5px 3px;}
 
-.checkbox {
-  width: 15px;
-  height: 15px;
-  font-size: 14px;
-  margin: 5px 3px;
-}
 .hiddenText{
 	width:300px;
 	visibility:hidden;
 	height:30px;
-	padding-bottom:10px; /* 10px */
+	padding-bottom:10px;
   	font-size: 12px;
   	line-height: 1.1em;
 }
@@ -125,83 +56,21 @@ transform: translateX(-50%);
 	line-height: 1.1em;
 }
 
-.gender{
-	margin-right: 5px;
-}
-
-.btnWrap {
-	width: 470px;
-  display: flex;
-  justify-content: space-between;
-  
-}
-.join_submitBtn {
-	background-color: lavender;
-  cursor: pointer;
-  border: none;
-  width: 210px;
-  height: 30px;
-  margin-right: 20px;
-  margin-top: 30px;
-  margin-left: 22px;
-}
-
-.join_submitBtn:hover{
-	background-color: #E3C4ff;
-}
-
-
-.join_checkbtn {
-  cursor: pointer;
-  border: none;
-  width: 80px;
-  height: 30px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-.join_checkbtn:hover{
-	background-color: #E3C4ff;
-}
-
-.check{
-	background-color:#fff;
-}
-
-.cell{
-}
-
-.cell p {
-	font-size: 13px;
-}
-
-.t3 {
-  color: #777;
-  font-size: 14px;
-  margin: 83px 0 0 -20px;
-}
-.category {
-  margin-top: 25px;
-}
-.category p {
-	font-size: 12px;
-	color: #777;
-}
-.detail{
-	margin: 5px 0;
-	display: inline-block;
-}
-#form-group{
-	display:flex;
-}
-#dchk{
-magin-left:0;
-}
-
-.checkment{
-	font-size: 12px;
-	vertical-align:text-top; /* input체크박스랑 span글씨 높이 맞추기 */
-	width: 343px;
-	display: inline-block;
-	line-height: 1.6em;
-}
+.gender{margin-right: 5px;}
+#birthDaySelect{height:30px;}
+.requirement_info_inner_size .postInfo .postInput{width:330px; height:28px; font-size: 15px;}
+.btnWrap {width: 470px;display: flex;justify-content: space-between;}
+.join_submitBtn {background-color: lavender;cursor: pointer;border: none;width: 210px;height: 30px;margin-right: 20px;margin-top: 30px;margin-left: 22px;}
+.join_submitBtn:hover{background-color: #E3C4ff;}
+.join_checkbtn {cursor: pointer;border: none;width: 80px;height: 30px;margin-right: 20px;margin-bottom: 10px;}
+.join_checkbtn:hover{background-color: #E3C4ff;}
+.check{background-color:#fff;}
+.cell{}
+.cell p {font-size: 13px;}
+.t3 {color: #777;font-size: 14px;margin: 83px 0 0 -20px;}
+.category {margin-top: 25px;}
+.category p {font-size: 12px;color: #777;}
+.detail{margin: 5px 0;display: inline-block;}
+#form-group{display:flex;}
+#dchk{magin-left:0;}
+.checkment{font-size: 12px;vertical-align:text-top; /* input체크박스랑 span글씨 높이 맞추기 */width: 343px;display: inline-block;line-height: 1.6em;}
