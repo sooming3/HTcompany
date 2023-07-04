@@ -1,11 +1,14 @@
 package org.ht.model;
 
+import java.util.ArrayList;
+
+
 public class BoardVO {
   
 	//게시판 글 번호 
     private int Board_no;
     //작성자 
-    private String user_id;
+    private String User_id;
     //연락처 
     private String User_phone;
     //제목  
@@ -27,6 +30,9 @@ public class BoardVO {
     //비공개 비밀번호 (비공개 설정 시에만)
     private String Board_pw;
     
+     // 파일업로드 관련 model
+ 	private ArrayList<Board_imageVO> Board_image;
+ 	
 	public int getBoard_no() {
 		return Board_no;
 	}
@@ -34,10 +40,10 @@ public class BoardVO {
 		Board_no = board_no;
 	}
 	public String getUser_id() {
-		return user_id;
+		return User_id;
 	}
 	public void setUser_id(String user_id) {
-		this.user_id = user_id;
+		this.User_id = user_id;
 	}
 	public String getUser_phone() {
 		return User_phone;
@@ -100,14 +106,22 @@ public class BoardVO {
 		Board_pw = board_pw;
 	}
 	
+	public ArrayList<Board_imageVO> getBoard_image() {
+		return Board_image;
+	}
+	public void setBoard_image(ArrayList<Board_imageVO> board_image) {
+		Board_image = board_image;
+	}
+	
 	@Override
 	public String toString() {
-		return "BoardVO [Board_no=" + Board_no + ", user_id=" + user_id + ", User_phone=" + User_phone
+		return "BoardVO [Board_no=" + Board_no + ", User_id=" + User_id + ", User_phone=" + User_phone
 				+ ", Board_title=" + Board_title + ", Board_content=" + Board_content + ", Board_date=" + Board_date
 				+ ", Board_redate=" + Board_redate + ", Board_count=" + Board_count + ", Board_file=" + Board_file
 				+ ", Board_Category_no=" + Board_Category_no + ", Board_open=" + Board_open + ", Board_pw=" + Board_pw
-				+ "]";
+				+ ", Board_image="+ Board_image + "]";
 	}
+
 
 	
 

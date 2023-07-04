@@ -12,6 +12,7 @@ public class Board_imageVO {
 	 private String Board_image_size;
 	 //첨부파일 생성 날짜
 	 private String Board_image_date;
+	 
 	public String getBoard_image_no() {
 		return Board_image_no;
 	}

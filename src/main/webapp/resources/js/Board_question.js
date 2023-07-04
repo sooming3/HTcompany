@@ -98,5 +98,20 @@ function LastCheck(){
 }
 
 
- 
+$(document).ready(function() {
+  // 검색 버튼 클릭 시 이벤트 처리
+  $(".search_bt").click(function() {
+    // 검색어 가져오기
+    var keyword = $("#search").val();
+    
+    // 검색어 유효성 검사 등 원하는 로직을 수행한 후,
+    // 필요에 따라 검색 결과 페이지로 이동하거나 추가적인 처리를 수행할 수 있습니다.
+    
+    // 검색 결과 페이지로 이동하는 예시
+    var url = "/Board_list?type=T&keyword=" + keyword;
+    window.location.href = url;
+  });
+});
+
+
   

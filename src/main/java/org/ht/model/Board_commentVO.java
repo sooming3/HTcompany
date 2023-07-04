@@ -14,6 +14,7 @@ public class Board_commentVO {
 	 private String Comment_date;
 	 //답변 수정일
 	 private String Comment_redate;
+	 
 	public int getComment_no() {
 		return Comment_no;
 	}

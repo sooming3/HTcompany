@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
     
 <%@ include file ="viviana_header.jsp" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!-- 
 <head>
@@ -23,7 +24,7 @@
       
 		<div class="search_container">
 	   		 <span class="icon"><i class="fa fa-search"></i></span>
-        	 <input type="search" id="search" onkeyup="filter()" placeholder="Search" >
+        	 <input type="search" name="keyword" value="${paging.cri.keyword}" id="search" placeholder="Search" >
         	 <button type="button" class="search_bt">검색</button>
 
 		</div>
@@ -50,87 +51,20 @@
 				<div class="count">조회</div>
 			</div>
 			<div>
-				<div class="num">10</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
+			<!-- for문 시작 -->
+			  <c:forEach items="${list}" var="board_list">
+				    <div class="board_item">
+				        <div class="num">${board_list.Board_no}</div>
+				        <div class="sel">${board_list.Board_Category_no}</div>
+				        <div class="title"><a href="/Board_list_view?bno=${board_list.Board_no}">${boardlist.Board_title}</a></div>
+				        <div class="writer">${board_list.User_id}</div>
+				        <div class="date">${board_list.Board_date}</div>
+				        <div class="count">${board_list.Board_count}</div>
+				    </div>
+			  </c:forEach>
+			  <!-- for문 종료 -->
 			</div>
-			<div>
-				<div class="num">9</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">8</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">7</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">6</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">5</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">4</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">3</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">2</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-			<div>
-				<div class="num">1</div>
-				<div class="sel">제품문의</div>
-				<div class="title"><a href="#" onclick="location.href='http://localhost:8080/view'">title</a></div>
-				<div class="writer">박선영</div>
-				<div class="date">2023.03.10</div>
-				<div class="count">2</div>
-			</div>
-
-		</div>
+					
 		<div class="board_page">
 			<a href="#" class="bt first"> &lt&lt </a>
 			<a href="#" class="bt prev">&lt</a>
@@ -143,6 +77,7 @@
 			<a href="#" class="bt last">&gt&gt</a>
 		
 		</div>
+</div>		
 		<div class="bt_wrap">
 			<a href="#" class="on" onclick="location.href='http://localhost:8080/question'"> 글 작성 </a>
 		</div>

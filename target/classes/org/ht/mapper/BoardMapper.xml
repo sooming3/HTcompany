@@ -5,23 +5,29 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-  <mapper namespace="org.hj.mapper.BoardMapper">
+  <mapper namespace="org.ht.mapper.BoardMapper">
 
      	
-  		<!-- 카테고리, 제목, 작성자를 board테이블 insert -->
+  		<!-- board테이블 insert -->
   		<insert id="write">
+  		
   			<selectKey keyProperty="Board_no" order="BEFORE" resultType="int">
   				select max(Board_no)+1 Board_no
 				from board
 				
   			</selectKey>
 
-  			insert into board(Board_no,Board_Category_no,Board_title, user_id)
-			values(#{Board_no},#{Board_Category_no},#{Board_title}, #{user_id})
+  			 INSERT INTO board (User_id, User_phone, Board_title, Board_content, Board_date,
+                     Board_redate, Board_count, Board_file, Board_Category_no,
+                     Board_open, Board_pw)
+ 			 VALUES (#{userId}, #{userPhone}, #{boardTitle}, #{boardContent}, NOW(),
+         	 NOW(), #{boardCount}, #{boardFile}, #{boardCategoryNo},
+          	 #{boardOpen}, #{boardPw})
+          	 
   		</insert>
      
   		<!-- 키워드를 이용한 게시판 검색기능 -->
-  		<select id="list" resultType="org.hj.model.BoardVO">
+  		 <select id="list" resultType="org.ht.model.BoardVO">
   			
   			select *
 			from(
@@ -50,10 +56,11 @@
 			]]>
   		</select>
   		
-  		<select id="detail" resultType="org.hj.model.BoardVO">
+  		<select id="detail" resultType="org.ht.model.BoardVO">
   			select * from board
   			where bno=#{bno}
   		</select>
+  		
   		<update id="cntup">
   			update board
 			set cnt = cnt + 1
@@ -91,6 +98,6 @@
 			
 			
 			</if>
-  		</select>
+  		</select> 
   		
   </mapper>
